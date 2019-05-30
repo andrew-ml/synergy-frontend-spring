@@ -1,0 +1,10 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* common classes */
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
