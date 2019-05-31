@@ -14,3 +14,52 @@ body {
 	background: url(img/bg.jpg) center no-repeat;
 	background-size: cover;
 }
+
+.header_content {
+	position: relative;
+	z-index: 5;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header_content h1 {
+	text-transform: uppercase;
+	font-size: 110px;
+	font-weight: 100;
+	margin-top: 138px;
+	margin-bottom: 28px;
+}
+
+.header_content p {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 300;
+	margin-bottom: 21px;
+}
+
+.header_content button {
+	width: 215px;
+	height: 55px;
+	background-color: #0023ff;
+	border-radius: 50px;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 9px;
+	font-weight: 900;
+	cursor: pointer;
+}
+
+.bg_text {
+	position: absolute;
+	top: 130px;
+	left: 415px;
+	z-index: 0;
+}
+
+.bg_text h2 {
+	color: rgba(231, 231, 231, 0.7);
+	font-size: 200px;
+	text-transform: uppercase;
+}
