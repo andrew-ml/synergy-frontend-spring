@@ -56,11 +56,12 @@ header {
 
 .hmain {
     display: flex;
-    margin: 154px 0 33px 362px;
+    margin: 110px 0 33px 365px;
 }
 
 .hmain-left {
-   flex: 1;
+    flex: 0.81;
+    margin-top: 44px;
 }
 
 .hmain-right {
@@ -101,7 +102,6 @@ header {
  .header-phone {
      display: inline-block;
      position: relative;
-     margin:-45px 0 0 -80px;
  }
 
  .circle {
@@ -198,62 +198,43 @@ h2 {
     margin: 124px auto;
 }
 
+.upu-block {
+    display: flex;
+    margin-right: 45px;
+}
+
+.upu-block:last-child {
+    margin-right: 0;
+}
+
 h3 {
+    margin-top: -2px;
+    margin-left: 13px;
     font-size: 24px;
     font-weight: bold;
     color: #353854;
-}
-
-.usability h3 {
-    padding-left: 91px;
-    margin-top: -68px;
-}
-
-.parallax h3 {
-    padding-left: 119px;
-    margin-top: -69px;
-}
-
-.unlimites h3 {
-    padding-left: 131px;
-    margin-top: -68px;
+    line-height: 1.5;
 }
 
 .upu-text {
     font-size: 16px;
     line-height: 1.88;
     color: #aeaeae;
+    margin-top: -11px;
+    margin-left: 14px;
 }
 
-.usability p {
-    padding-left: 91px;
-    margin-top: -6px;
-    width: 278px;
+.upu-img {
+    width: 78.33px;
 }
 
-.parallax p {
-    padding-left: 122px;
-    margin-top: -6px;
-}
-
-.unlimites p {
-    padding-left: 132px;
-    margin-top: -6px;
-}
-
-.usability img {
-    margin-top: 5px;
-    margin-left: -8px;
-}
-
-.parallax img{
+.upu-img img{
     margin-top: 6px;
-    margin-left: 25px;
+    margin-left: -5px;
 }
 
-.unlimites img {
-    margin-top: 5px;
-    margin-left: 33px;
+.upu-1 {
+    flex: 1;
 }
 
 .sec2 .title-sec h2 {
