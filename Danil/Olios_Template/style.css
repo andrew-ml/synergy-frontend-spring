@@ -103,15 +103,15 @@ body {
 }
 
 .logo img {
-	width: 21px;
-	height: 21px;
+	width: 42px;
+	height: 42px;
 }
 
 .nav {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-top: 75px;
+	margin-top: 115px;
 }
 
 .nav ul {
@@ -126,5 +126,86 @@ body {
 .add {
 	display: flex;
 	justify-content: center;
-	margin-top: 415px;
+	margin-top: 315px;
+}
+
+.nav_home {
+	fill: #D8D8D8;
+}
+
+.nav_home:hover {
+	fill: #001cd3;
+}
+
+.humburger {
+	position: fixed;
+	top: 75px;
+	right: 55px;
+	z-index: 5;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.menu-btn {
+	position: relative;
+	box-shadow: 0 0 12.5px 0 rgba(219, 219, 219, 0.5);
+	width: 50px;
+	height: 50px;
+	background-color: #ffffff;
+	border-radius: 50%;
+}
+
+.menu-btn span {
+	position: absolute;
+	top: 50%;
+	margin-top: -1px;
+	left: 50%;
+	margin-left: -10px;
+	width: 20px;
+	height: 2px;
+	background-color: #0023ff;
+}
+
+.menu-btn span::before, .menu-btn span::after {
+	content: "";
+	display: block;
+	transition: 0.2s;
+	background-color: #0023ff;
+	width: 20px;
+	height: 2px;
+}
+
+.menu-btn span::before {
+	transform: translateY(-5px);
+}
+
+.menu-btn span::after {
+	transform: translateY(3px);
+}
+
+.menu-btn-active span {
+	height: 0;
+}
+
+.menu-btn-active span::before {
+	transform: translateY(0px);
+}
+
+.menu-btn-active span::after {
+	transform: translateY(0px);
+}
+
+.nav_right {
+	width: 185px;
+	height: 100vh;
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	right: 0;
+	background-color: #ffffff;
+	transform: translateX(+100%);
+}
+
+.nav_right_active {
+	transform: translateX(0%);
 }
