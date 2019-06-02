@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple HTML page</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 50px;
+        font-family: sans-serif;
+      }
+
+      .form {
+        width: 500px;
+        margin: 0 auto;
+      }
+
+      .section-1 {
+        display: flex;
+        margin-bottom: 50px;
+      }
+
+      .section-1 input {
+        flex: 1;
+      }
+
+      .section-1 button {
+        margin-left: 10px;
+      }
+
+      .section-2 {
+        display: flex;
+      }
+
+      .section-2 .column-1 {
+        flex: 3;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background: red;
+      }
+
+      .section-2 .column-2,
+      .section-2 .column-3,
+      .section-2 .column-4 {
+        flex: 1;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        margin-left: 10px;
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form">
+      <section class="section-1">
+        <input type="text" />
+        <button>Click me</button>
+      </section>
+      <section class="section-2">
+        <div class="column-1">div column 1</div>
+        <div class="column-2">column 2</div>
+        <div class="column-3">column 3</div>
+        <div class="column-4">column 4</div>
+      </section>
+    </form>
+  </body>
+</html>
