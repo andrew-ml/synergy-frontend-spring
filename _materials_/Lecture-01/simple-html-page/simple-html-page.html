@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple HTML page</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="block-with-text">
+      Text inside the block
+    </div>
+
+    <div class="content">
+      <section>
+        <span>Text element</span>
+        <span>Text element</span>
+      </section>
+
+      <section>
+        <a href="http://google.com">Link to Google homepage</a>
+      </section>
+
+      <section>
+        <h1>h1 title</h1>
+        <h2>h2 title</h2>
+        <h3>h3 title</h3>
+        <h4>h4 title</h4>
+        <h5>h5 title</h5>
+        <h6>h6 title</h6>
+      </section>
+
+      <section>
+        <p>
+          Text paragraph <br />
+          The other line of text
+          <strong>bold text</strong>
+          <small>small text</small>
+          <i>italic text</i>
+        </p>
+      </section>
+
+      <section>
+        <blockquote>
+          Some blockquote text.<br />
+          The cite can go here
+        </blockquote>
+      </section>
+
+      <section>
+        <!-- unordered list -->
+        <ul>
+          <li>First element</li>
+          <li>Second element</li>
+          <li>Third element</li>
+        </ul>
+
+        <!-- ordered list -->
+        <ol>
+          <li>First element</li>
+          <li>Second element</li>
+          <li>Third element</li>
+        </ol>
+      </section>
+
+      <section>
+        <form>
+          <section>
+            <label for="text">Text input</label>
+            <input
+              class="input-text"
+              type="text"
+              name="text"
+              placeholder="enter some text"
+            />
+          </section>
+
+          <section>
+            <input
+              type="checkbox"
+              name="some-checkbox-input"
+              id="checkbox-input"
+            />
+            <label for="some-checkbox-input">Checkbox</label>
+          </section>
+
+          <section>
+            <div>
+              <input id="number-1" type="radio" name="some-number" value="1" />
+              <label for="number-1">Radio 1</label>
+            </div>
+            <div>
+              <input id="number-2" type="radio" name="some-number" value="2" />
+              <label for="number-2">Radio 2</label>
+            </div>
+          </section>
+
+          <select name="some-language">
+            <option value="UA">UA</option>
+            <option value="EN">EN</option>
+            <option value="RU">RU</option>
+          </select>
+
+          <button class="download-button">Download</button>
+        </form>
+      </section>
+
+      <section>
+        <table border="1">
+          <tr>
+            <th>index</th>
+            <th>name</th>
+            <th>surname</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Doe</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Mary</td>
+            <td>Roe</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <img
+          src="https://media.mnn.com/assets/images/2019/01/grumpy_cat.jpg.653x0_q80_crop-smart.jpg"
+          width="300"
+          alt="Cat image"
+        />
+      </section>
+    </div>
+  </body>
+</html>
