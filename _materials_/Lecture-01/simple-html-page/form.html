@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple HTML page</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <style>
+      body {
+        padding: 50px;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Отзыв о покупке товара</h1>
+      <div class="section">
+        <div>
+          <label for="name">Имя</label>
+        </div>
+        <input
+          class="input-text"
+          id="name"
+          type="text"
+          name="text"
+          placeholder="введите имя"
+        />
+      </div>
+
+      <div class="section">
+        <div>
+          <label for="name">Фамилия</label>
+        </div>
+
+        <input
+          class="input-text"
+          id="name"
+          type="text"
+          name="text"
+          placeholder="введите фамилию"
+        />
+      </div>
+
+        <input
+          type="checkbox"
+          name="some-checkbox-input"
+          id="some-checkbox-input"
+        />
+        <label for="some-checkbox-input">Мне есть 18 лет</label>
+
+      <div class="section">
+        <h3>Как вас обслужили?</h3>
+        <div>
+          <input id="quality-1" type="radio" name="quality" value="1" />
+          <label for="quality-1">Плохо</label>
+        </div>
+        <div>
+          <input id="quality-2" type="radio" name="quality" value="2" />
+          <label for="quality-2">Нормально</label>
+        </div>
+        <div>
+          <input id="quality-3" type="radio" name="quality" value="3" />
+          <label for="quality-3">Хорошо</label>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Ваш возраст</h3>
+        <select name="some-language">
+          <option value="1">до 18</option>
+          <option value="2">19-30</option>
+          <option value="3">30-40</option>
+          <option value="4">более 40</option>
+        </select>
+      </div>
+
+      <input type="submit" value="Отправить" />
+    </form>
+
+  </body>
+</html>

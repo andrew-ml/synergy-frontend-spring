@@ -1,0 +1,100 @@
+body {
+  width: 800px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.conainer {
+  margin: 0 0 20px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: yellow;
+  border: 1px solid green;
+}
+
+.inline-block {
+  font-size: 0;
+}
+.inline-block .box {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.flex {
+  display: flex;
+}
+.flex .box {
+  width: 200px;
+  flex-grow: 33.3;
+}
+
+.float .box {
+  float: left;
+}
+
+.text-with-image {
+  width: 600px;
+}
+
+.text-with-image img {
+  float: right;
+  width: 300px;
+  margin: 0 0 20px 20px;
+}
+
+.nav-float {
+  margin-bottom: 100px;
+}
+
+.nav-float .logo {
+  float: left;
+  display: block;
+  width: 200px;
+  height: 50px;
+  background: grey;
+}
+.nav-float .right-box {
+  float: right;
+  width: 200px;
+  height: 50px;
+  background: yellow;
+}
+
+.nav-float .center-box {
+  height: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  background: green;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-flex .logo {
+}
+.nav-flex .right-box {
+  width: 200px;
+  height: 50px;
+  background: yellow;
+}
+
+.nav-flex .center-box {
+  height: 50px;
+  width: 200px;
+  background: green;
+}
