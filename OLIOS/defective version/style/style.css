@@ -20,6 +20,7 @@ ul {
   background-color: #fff;
   width: 145px;
   z-index: 2;
+  position: fixed;
 }
 
 .main-content {
@@ -140,4 +141,23 @@ ul {
   height: 9px;
   width: 9px;
   cursor: pointer;
+}
+
+.left-navigation-ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-navigation {
+  margin-top: 75px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  left: -35px;
+}
+
+.in-button {
+  align-self: flex-end;
 }
