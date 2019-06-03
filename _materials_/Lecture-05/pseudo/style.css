@@ -1,0 +1,46 @@
+/* 
+:first-child
+:first-of-type
+:last-child
+:last-of-type
+:not()
+:nth-child()
+:nth-last-child()
+:nth-last-of-type()
+:nth-of-type()
+:only-child
+:only-of-type 
+*/
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding: 50px;
+  background: rgb(249, 249, 185);
+}
+
+ul li:only-child {
+  background: red;
+}
+
+button:active {
+  background: red;
+}
+
+.custom-checkbox {
+  width: 100px;
+  height: 100px;
+  background: grey;
+}
+
+input[type="checkbox"] + {
+}
+
+input[type="checkbox"]:disabled {
+  background: red;
+}
