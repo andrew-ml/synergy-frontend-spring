@@ -66,6 +66,7 @@ body {
 
 .header_content button:hover {
   background-color: #001cd3;
+  box-shadow: 0 0 12.5px 0 rgb(156, 156, 156, 0.5);
 }
 
 .bg_text {
@@ -171,7 +172,8 @@ body {
   background-color: #0023ff;
 }
 
-.menu-btn span::before, .menu-btn span::after {
+.menu-btn span::before,
+.menu-btn span::after {
   content: "";
   display: block;
   transition: 0.2s;
