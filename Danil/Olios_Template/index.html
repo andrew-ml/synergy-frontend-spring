@@ -45,9 +45,10 @@
     <div class="nav_right"></div>
 
     <script>
-      let humburger = document.querySelector(".menu_btn");
+      let humburger = document.querySelector(".menu-btn");
       humburger.addEventListener("click", e => {
-        e.target.closest(".menu_btn").classList.toggle(".menu-btn-active");
+        e.target.classList.toggle("menu-btn-active");
+        document.querySelector(".nav_right").classList.toggle("active");
       });
     </script>
   </body>
