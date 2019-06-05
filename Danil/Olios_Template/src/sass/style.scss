@@ -17,9 +17,9 @@ html {
 }
 
 .header {
-  min-height: 600px;
+  min-height: 860px;
   font-family: "Lato", sans-serif;
-  background: url(img/bg.jpg) 50% 100% no-repeat;
+  background: url(../img/bg.jpg) 50% 100% no-repeat;
   background-size: cover;
 }
 
@@ -191,10 +191,10 @@ html {
   top: 0;
   right: 0;
   background-color: #ffffff;
-  border: 1px solid red;
-  // transform: translateX(+100%);
+  transform: translateX(+100%);
+  transition: 0.5s;
 }
 
-// .nav_right_active {
-//   transform: translateX(0%);
-// }
+.nav_right_active {
+  transform: translateX(0%);
+}
