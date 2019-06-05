@@ -1,6 +1,9 @@
+@import "normalize";
+
 * {
   list-style: none;
   font-family: Lato;
+  text-transform: uppercase;
 }
 
 ul {
@@ -18,22 +21,22 @@ a {
   background-color: #fff;
   width: 72px;
   margin-top: 48px;
-}
 
-.left-navigation nav {
-  display: flex;
-  flex-direction: column;
-  height: calc(100% - 48px);
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 48px);
+  }
 }
 
 .for-logo {
   margin-bottom: 72px;
   padding-top: 16px;
-}
 
-.for-logo svg {
-  width: 21px;
-  height: 21px;
+  svg {
+    width: 21px;
+    height: 21px;
+  }
 }
 
 .main-navigation {
@@ -107,17 +110,17 @@ a {
   outline: none;
   width: 107.5px;
   height: 27px;
-}
 
-.view-button a {
-  color: #fff;
+  a {
+    color: #fff;
+  }
 }
 
 .under-main-title {
   font-size: 200.3px;
   font-weight: 900;
   letter-spacing: 5px;
-  color: rgba(231, 231, 231);
+  color: rgb(231, 231, 231);
   position: absolute;
   top: -159px;
   left: -103px;
