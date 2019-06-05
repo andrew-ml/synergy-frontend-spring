@@ -1,0 +1,61 @@
+.prod {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+}
+
+.Prostokt-1-kopia {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 73px;
+  top: 48px;
+  width: 448.5px;
+  box-shadow: 0 0 12.5px 0 rgba(219, 219, 219, 0.45);
+  background-color: #ffffff;
+}
+
+.like {
+  flex: 1;
+  margin-left: 361px;
+  margin-top: 51px;
+  span {
+    align-items: center;
+    font-size: 14.5px;
+    font-weight: 300;
+  }
+  img {
+    width: 16px;
+    height: 15px;
+  }
+}
+
+.chair {
+  margin-top: 100px;
+  flex: 1;
+  img {
+    width: 382px;
+    height: 382px;
+  }
+}
+
+.bot-prod {
+  flex: 1;
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.Warstwa-1 {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  right: 0;
+  top: 48px;
+  width: 845px;
+  height: 719px;
+  background: #f0f0ff;
+}
