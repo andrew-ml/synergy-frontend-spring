@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.Prostokt-1-kopia {
+.prostokt-1-kopia {
   flex: 1;
   margin-left: 72px;
   z-index: 1;
@@ -18,10 +18,11 @@
 
 .like {
   display: flex;
+  float: right;
   align-items: center;
   flex: 1;
-  margin-left: 361px;
-  margin-top: 51px;
+  margin-right: 38px;
+  margin-top: 52px;
   span {
     align-items: center;
     font-size: 14.5px;
@@ -39,14 +40,18 @@
 }
 
 .chair {
-  margin-top: 100px;
-  margin-left: 117px;
+  margin-top: 167px;
+  margin-left: 84px;
   img {
     width: 382px;
     height: 382px;
   }
   .bot-prod {
     margin-top: 102px;
+    display: flex;
+    .bot-prod-1 {
+      margin-left: 190px;
+    }
     img {
       width: 16px;
       height: 16px;
@@ -55,23 +60,38 @@
   }
 }
 
-.Warstwa {
+.warstwa {
   display: flex;
   flex-direction: column;
   flex: 2;
 }
 
-.Warstwa-1 {
+.warstwa-1 {
   flex: 1;
   background: #f0f0ff;
-  .PRODUCTS {
-    font-size: 25px;
-    font-weight: 300;
-    margin-left: 61px;
+  .products-flex-for {
+    display: flex;
+    align-items: center;
+    .products {
+      font-size: 25px;
+      font-weight: 300;
+      margin-left: 61px;
+    }
+    img {
+      width: 26.5px;
+      height: 28.5px;
+    }
+    .lr {
+      margin: 0 19px 0 126px;
+      font-size: 9px;
+      letter-spacing: 0.2px;
+      text-align: right;
+      color: #c1c1c1;
+    }
   }
-  .WHITE-SEAT---OFFICE {
+  .office {
     font-size: 37px;
-    margin: 138px 0 0 65px;
+    margin: 112px 0 0 65px;
     font-weight: 300;
     letter-spacing: 0.9px;
     color: #0023ff;
@@ -80,7 +100,7 @@
       letter-spacing: 2.1px;
     }
   }
-  .Lorem-ipsum-dolor {
+  .lorem-ipsum-dolor {
     margin: 20px 0 0 64px;
     width: 330px;
     font-size: 12px;
@@ -89,7 +109,7 @@
     letter-spacing: 0.3px;
     color: #a8a8a8;
   }
-  .COST {
+  .cost {
     margin: 33px 98px 0px 64px;
     font-size: 10px;
   }
@@ -108,15 +128,19 @@
   margin-left: 12px;
 }
 
-.Prostokt-zaokrglony-4 {
+.prostokt-zaokrglony-4 {
   display: flex;
-  width: 42px;
-  height: 27px;
   margin: 5px 30px 0px 111px;
   align-items: center;
   border-radius: 13px;
   background: #fff;
-  span {
+  input {
+    width: 27.5px;
+    height: 25px;
+    align-items: center;
+    padding-left: 14px;
+    border-radius: 13px;
+    border: none;
     font-size: 15px;
     font-weight: bold;
     margin: 0 auto;
@@ -139,7 +163,7 @@
   margin-bottom: 122px;
 }
 
-.Warstwa-2 {
+.warstwa-2 {
   flex: 2;
   background: #fff;
   img {
@@ -150,13 +174,12 @@
 .flex-container-img {
   display: flex;
   justify-content: space-between;
-  margin-top: 80px;
   margin-right: 51px;
 }
 
 .recomended {
   display: block;
-  margin: -43px 0px 27px 36px;
+  margin: 35px 0px 27px 36px;
   font-size: 19px;
   writing-mode: vertical-rl;
   color: #00000033;
@@ -165,9 +188,9 @@
 .new-flex-container {
   display: flex;
   flex-direction: column;
-  margin: -51px 0 0 0;
+  margin: 30px 0 0 0;
   .name-for-chair {
-    margin: 8px 0 0 0;
+    margin: 5px 0 0 0;
     font-size: 11.5px;
     font-weight: 300;
     letter-spacing: 0.3px;
