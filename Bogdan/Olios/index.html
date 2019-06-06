@@ -4,44 +4,95 @@
     <meta charset="UTF-8">
     <meta name="description" content="HTML tutorial website">
     <meta name="keywords" content="HTML,CSS,JavaScript">
-    <title>HTML tutorial web page</title>
+    <title>Olios</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
+    <div class="navbar">
+      <a href="" class="logo"><img src="image/logo@3x.png" alt=""/></a>
+      <ul class="nav_links">
+        <li>
+          <a href="#"><img src="image/home.svg" alt=""/></a>
+        </li>
+        <li>
+          <a href="#"><img src="image/basket.svg" alt=""/></a>
+        </li>
+        <li>
+          <a href="#"><img src="image/search.svg" alt=""/></a>
+        </li>
+      </ul>
+      <a href="" class="login"><img src="image/login.svg" alt=""/></a>
+    </div>
 
-    <h1>HTML tutorial web page</h1>
-
-    <div class="my-block" id="first-block">Some block element</div>
-
-    <span class="my-text">Some text element</span>
-
-    <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">http://info.cern.ch/hypertext/WWW/TheProject.html</a>
-
-    <form class="new_user" id="new_user" action="http://localhost:3001/signin" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="NOPlDwuzAMUGuUPy7VckVoGP9EWBY1W+hVxs/lAZVwpGM5lef3RWbNSSkx6ckD1Ttt1gS2oeZUKe1A6svWHjHA==">
-        <div class="form-group ">
-          <input class="form-control" autofocus="autofocus" placeholder="Email or Username" type="text" name="user[login]" id="user_login">
-        </div>
-        <div class="form-group has-password-toggle ">
-          <input class="form-control" autocomplete="off" placeholder="Password" type="password" name="user[password]" id="user_password">
-          <span class="password-toggle" data-hide="true">show</span>
-        </div>
-        <div class="form-group">
-        </div>
-        <div class="form-group">
-          <div class="checkbox">
-            <label for="user_remember_me">
-              <input name="user[remember_me]" type="hidden" value="0"><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me">
-              <i class="checkbox-icon"></i> Remember Me
-         </label>
-         </div>
-        <input type="submit" name="commit" value="Log in" class="btn btn-primary btn-block btn-login" data-disable-with="Log in">
-        <div class="text-center">
-          <div class="links-pipe">
-        <span><a href="/passwordreset.user">Forgot your password?</a></span>
-        </div>
-        </div>
+    <main>
+      <div class="home-page">
+        <h1 class="page-title">OLIOS</h1>
+        <p class="page-subtitle">Newest furniture shop template</p>
+        <button class="view-more">View more</button>
       </div>
-    </form>
+    </main>
+
+    <button class="side-nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="side-nav">
+      <ul>
+        <li>
+          <a href="#">
+            <span>Living room</span>
+            <img src="image/living_room.png" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Office</span>
+            <img src="image/office.png" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>For kids</span>
+            <img src="image/for_kids.png" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Kitchen</span>
+            <img src="image/kitchen.png" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Accessories</span>
+            <img src="image/accesories.png" />
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="show-all">
+        Show all categories
+        <hr />
+      </a>
+    </nav>
+
+    <nav class="slider-nav">
+      <ul>
+        <li><button class="active"></button></li>
+        <li><button></button></li>
+        <li><button></button></li>
+        <li><button></button></li>
+      </ul>
+    </nav>
+
+
+    
 
   </body>
 </html>
