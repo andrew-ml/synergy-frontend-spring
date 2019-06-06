@@ -1,9 +1,9 @@
 .Prostokt-1-kopia-3 {
   position: absolute;
+  padding: 100px 180px;
   left: 72px;
   top: 48px;
   width: 100%;
-  height: 100%;
   opacity: 0.9;
   box-shadow: 0 0 12.5px 0 rgba(219, 219, 219, 0.5);
   background-color: #ffffff;
@@ -12,11 +12,9 @@
 .input-wrapper-flex {
   display: flex;
   flex-direction: column;
-  margin-left: 192px;
 }
 
 .input-wrapper {
-  margin-top: 132px;
   input {
     color: black;
     font-size: 70px;
@@ -41,7 +39,6 @@
 .search-flex {
   display: flex;
   margin-top: 87px;
-  margin-left: 180px;
   p {
     font-size: 36px;
     font-weight: 300;
@@ -68,7 +65,7 @@
 }
 
 .Searched-result {
-  margin: 115px 0 0 192px;
+  margin-top: 115px;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 0.4px;
