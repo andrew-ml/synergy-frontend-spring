@@ -196,10 +196,11 @@ html {
 
 .nav_right {
   width: 185px;
-  height: 100vh;
+  top: 48px;
+  bottom: 0;
+  right: 0;
   position: fixed;
   z-index: 6;
-  top: 0;
   right: 0;
   background-color: #ffffff;
   transform: translateX(+100%);
@@ -236,7 +237,7 @@ html {
     font-size: 9px;
     text-transform: uppercase;
     color: #0023ff;
-    margin-top: 194.5px;
+    margin-top: 140px;
     font-family: "Lato", sans-serif;
   }
   hr {
