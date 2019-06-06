@@ -15,6 +15,17 @@ html {
     transform: scale(0.9);
   }
 }
+@keyframes button {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
 
 .header {
   min-height: 860px;
