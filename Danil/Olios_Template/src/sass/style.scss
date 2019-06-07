@@ -26,8 +26,7 @@ html {
     transform: scale(0.9);
   }
 }
-
-.header {
+body {
   min-height: 860px;
   font-family: "Lato", sans-serif;
   background: url(../img/bg.jpg) 50% 100% no-repeat;
@@ -36,7 +35,7 @@ html {
 
 .header_content {
   position: relative;
-  z-index: 5;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -252,4 +251,27 @@ html {
 
 .nav_right_active {
   transform: translateX(0%);
+}
+.search {
+  position: relative;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  min-height: 860px;
+  background-color: #ffffff;
+  opacity: 0;
+  padding: 139.5px 179.5px;
+  input {
+    border: none;
+    border-bottom: 1px solid #e4e4e4;
+    width: 786px;
+    height: 85px;
+    font-size: 70px;
+    font-weight: 100;
+    outline: none;
+  }
+}
+
+.search_active {
+  opacity: 0.8;
 }
