@@ -61,6 +61,18 @@
 
     <div class="search">
       <input type="search" placeholder="RED SEAT" />
+      <p>Type product that you are looking for</p>
+      <div class="search_content">
+        <div class="content_1">
+          <img src="img/read_seat.jpg" alt="/" />
+          <h2>Red seat</h2>
+        </div>
+        <div class="content_2">
+          <img src="img/dark_seat.jpg" alt="/" />
+          <h2>Dark seat</h2>
+        </div>
+      </div>
+      <h3 class="bottom_text">1 Searched result</h3>
     </div>
 
     <script>
@@ -71,10 +83,10 @@
           .querySelector(".nav_right")
           .classList.toggle("nav_right_active");
       });
-      let search = document.querySelector(".search_button");
-      search.addEventListener("click", e => {
-        e.target.classList.toggle("search_active");
-      });
+      // let search = document.querySelector(".search_button");
+      // search.addEventListener("click", e => {
+      //   e.target.classList.toggle("search_active");
+      // });
     </script>
   </body>
 </html>
