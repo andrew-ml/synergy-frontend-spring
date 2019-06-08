@@ -1,7 +1,7 @@
 @import "normalize";
 @import "product";
 @import "search";
-
+@import "categories";
 html {
   min-height: 100%;
 }
@@ -11,6 +11,9 @@ body {
   font-family: "Lato", sans-serif;
   background: url(../img/bg.jpg) 50% 100% no-repeat;
   background-size: cover;
+  a {
+    text-decoration: none;
+  }
 }
 
 .navbar {
@@ -120,6 +123,7 @@ body {
       }
     }
   }
+
   a.show-all {
     display: block;
     margin-bottom: 40px;

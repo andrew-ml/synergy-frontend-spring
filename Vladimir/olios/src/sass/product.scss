@@ -48,7 +48,9 @@
     margin-top: 102px;
     display: flex;
     .bot-prod-1 {
-      margin-left: 285px;
+      display: flex;
+      justify-content: flex-end;
+      width: 345px;
     }
     img {
       width: 16px;
@@ -154,7 +156,7 @@
   font-size: 9px;
   font-weight: 900;
   color: #fff;
-  border-radius: 13.5px;
+  border-radius: 30px;
   border: none;
   background: #0023ff;
   cursor: pointer;
