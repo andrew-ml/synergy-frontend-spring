@@ -49,7 +49,7 @@
           <a href="#"><img src="img/basket.svg" alt=""/></a>
         </li>
         <li>
-          <a href="#"><img src="img/search.svg" alt=""/></a>
+          <a class="search_btn" href="#"><img src="img/search.svg" alt=""/></a>
         </li>
       </ul>
       <a href="" class="logout"><img src="img/in.svg" alt=""/></a>
@@ -99,6 +99,10 @@
         document
           .querySelector(".nav_right")
           .classList.toggle("nav_right_active");
+      });
+      let search = document.querySelector(".search_btn");
+      seacrh.addEventListener("click", e => {
+        e.target.classList.toggle("search_active");
       });
     </script>
   </body>
