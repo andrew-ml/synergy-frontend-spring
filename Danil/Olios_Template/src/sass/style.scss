@@ -1,4 +1,5 @@
 @import "normalize";
+@import "product.scss";
 
 html {
   min-height: 100%;
@@ -230,6 +231,9 @@ body {
       }
       &:hover + img {
         transform: translateY(-10px);
+      }
+      &:active + img {
+        transform: translateY(0px);
       }
     }
     img {
