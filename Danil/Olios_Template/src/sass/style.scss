@@ -123,6 +123,10 @@ body {
       &:hover {
         transform: scale(1.5);
       }
+      &:active {
+        transform: scale(1);
+        transition: 0.1s;
+      }
     }
   }
   .navbar-links {
@@ -139,6 +143,10 @@ body {
         transition: 0.5s;
         &:hover {
           transform: scale(1.5);
+        }
+        &:active {
+          transform: scale(1);
+          transition: 0.1s;
         }
       }
     }
@@ -161,6 +169,10 @@ body {
   height: 43.5px;
   background-color: #ffffff;
   border-radius: 50%;
+  transition: 0.5s;
+  &:hover {
+    box-shadow: 0 0 18px 0 rgba(219, 219, 219, 0.9);
+  }
   span {
     position: absolute;
     top: 50%;

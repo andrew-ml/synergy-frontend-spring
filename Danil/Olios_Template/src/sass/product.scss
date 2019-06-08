@@ -24,10 +24,14 @@ main {
           background: none;
           border: none;
           cursor: pointer;
+          transition: 0.5s;
           img {
             padding-top: 1px;
             width: 16px;
             height: 15px;
+          }
+          &:hover {
+            transform: scale(1.2);
           }
         }
       }
@@ -66,11 +70,10 @@ main {
       width: 65%;
       .description {
         background: #f0f0f0;
-        height: 70%;
+        height: 50%;
       }
       .recomended {
         background: #ffffff;
-        height: 30%;
         box-shadow: 0 0 12.5px 0 rgba(219, 219, 219, 0.25);
       }
     }
