@@ -9,10 +9,19 @@ button {
   padding: 0;
   cursor: pointer;
 }
+ ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+ }
+
+a {
+  text-decoration: none;
+}
 
 body {
   font-family: Lato, sans-serif;
-  background: url(img/bg.jpg) 50% 100% no-repeat;
+  background: url(../img/bg.jpg) 50% 100% no-repeat;
   background-size: cover;
 }
 
@@ -37,9 +46,6 @@ body {
   }
 
   .navitem {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     flex: 1;
 
     li {
@@ -115,6 +121,7 @@ aside button {
   right: 29px;
   top: 86px;
   box-shadow: 0 0 12.5px 0 rgba(219, 219, 219, 0.5);
+  z-index: 1;
 }
 
 .menu-btn {
@@ -155,7 +162,7 @@ aside button {
   width: 100px;
   position: absolute;
   bottom: 48px;
-  right: 111px;
+  right: 210px;
 
   button {
   width: 11px;
@@ -168,3 +175,60 @@ aside button {
     }
   }
 } 
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  top: 48px;
+  right: 0;
+  bottom: 0;
+  width: 187px;
+  box-shadow: 0 0 12.5px 0 rgba(219, 219, 219, 0.5);
+  background-color: #ffffff;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .menu-item {
+    flex: 1;
+    margin: 198px 0 20px;
+
+    li {
+      padding: 0 37px;
+      margin-bottom: 40.5px;
+
+      a {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        span {
+          font-size: 9px;
+          letter-spacing: 0.2px;
+          color: #c1c1c1;
+          text-transform: uppercase;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #0023ff;
+    margin-bottom: 0px;
+  }
+
+  hr {
+    width: 78.5px;
+    height: 1px;
+    background-color: #0023ff;
+    border: none;
+    margin-bottom: 40px;
+  }
+}
+
