@@ -1,4 +1,5 @@
 @import "normalize";
+// @import "search.scss";
 @import "product.scss";
 
 html {
@@ -282,6 +283,7 @@ body {
 .nav_right_active {
   transform: translateX(0%);
 }
+
 .search {
   position: fixed;
   top: 48px;
@@ -291,7 +293,6 @@ body {
   box-shadow: 0 0 12.5px 0 rgba(219, 219, 219, 0.5);
   background-color: #ffffff;
   padding: 139.5px 179.5px;
-  transform: translateX(100%);
   transition: 0.3s;
   input {
     border: none;
@@ -329,7 +330,4 @@ body {
     color: black;
     margin-top: 114.5px;
   }
-}
-.search_active {
-  transform: translateX(0);
 }

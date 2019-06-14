@@ -33,8 +33,63 @@
           </div>
         </div>
         <div class="product_description">
-          <div class="description"></div>
-          <div class="recomended"></div>
+          <div class="description">
+            <div class="head_text">
+              <h3>Products</h3>
+              <div class="link_active">
+                <p>Living room</p>
+                <img src="img/living_room.png" alt="/" />
+              </div>
+            </div>
+            <div class="middle_content">
+              <h2><span>White seat</span> - office</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                Ut fermentum interdum malesuada. Sed ornare posuere lobortis.
+              </p>
+            </div>
+            <div class="bottom_content">
+              <div class="cost">
+                <p>Cost</p>
+                <br />
+                <span>$65</span>
+                <s>$90</s>
+              </div>
+              <div class="quanity">
+                <p>Quanity</p>
+                <div class="input">
+                  <p>1</p>
+                  <img class="quanity_up" src="img/quanity_up.png" alt="/" />
+                  <img
+                    class="quanity_down"
+                    src="img/quanity_down.png"
+                    alt="/"
+                  />
+                </div>
+              </div>
+              <button>Add to card</button>
+            </div>
+          </div>
+          <div class="recomended">
+            <p class="recomended_head">Recomended</p>
+            <div class="recomended_cards">
+              <div class="card">
+                <img src="img/dark_seat_2.jpg" alt="/" />
+                <h4>Dark seat</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="card">
+                <img src="img/blue_seat.jpg" alt="/" />
+                <h4>Blue seat</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="card">
+                <img src="img/red_seat_2.jpg" alt="/" />
+                <h4>Red seat</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -49,7 +104,7 @@
           <a href="#"><img src="img/basket.svg" alt=""/></a>
         </li>
         <li>
-          <a class="search_btn" href="#"><img src="img/search.svg" alt=""/></a>
+          <a href="search.html"><img src="img/search.svg" alt=""/></a>
         </li>
       </ul>
       <a href="" class="logout"><img src="img/in.svg" alt=""/></a>
@@ -76,22 +131,6 @@
       <hr />
     </div>
 
-    <div class="search">
-      <input type="search" placeholder="RED SEAT" />
-      <p>Type product that you are looking for</p>
-      <div class="search_content">
-        <div class="content_1">
-          <img src="img/read_seat.jpg" alt="/" />
-          <h2>Red seat</h2>
-        </div>
-        <div class="content_2">
-          <img src="img/dark_seat.jpg" alt="/" />
-          <h2>Dark seat</h2>
-        </div>
-      </div>
-      <h3 class="bottom_text">1 Searched result</h3>
-    </div>
-
     <script>
       let humburger = document.querySelector(".menu-btn");
       humburger.addEventListener("click", e => {
@@ -99,10 +138,6 @@
         document
           .querySelector(".nav_right")
           .classList.toggle("nav_right_active");
-      });
-      let search = document.querySelector(".search_btn");
-      seacrh.addEventListener("click", e => {
-        e.target.classList.toggle("search_active");
       });
     </script>
   </body>
