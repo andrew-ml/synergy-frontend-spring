@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple HTML page</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        display: flex;
+        width: 100%;
+      }
+     
+     .column-1{
+      flex-grow: 1;
+      background-color: gray;
+      border-radius:5px;
+      margin: 5px;
+      padding: 10px;
+     }
+     .column-2{
+      flex-grow: 2;
+      background-color: gray;
+      border-radius:5px;
+      margin: 5px;
+      padding: 10px;
+     }
+     .column-3{
+      flex-grow: 3;
+      background-color: gray;
+      border-radius:5px;
+      margin: 5px;
+      padding: 10px;
+     }
+     .column-4{
+      flex-grow: 4;
+      background-color: gray;
+      border-radius:5px;
+      margin: 5px;
+      padding: 10px;
+     }
+     .column-5{
+      background-color: gray;
+      border-radius:5px;
+      margin: 5px;
+      padding: 10px;
+      flex-grow: 5;
+      }
+    .column-6{
+      flex-grow: 6;
+      background-color: gray;
+      border-radius:5px;
+      margin: 5px;
+      padding: 10px;
+      }
+    .column-7{
+    flex-grow: 7;
+    background-color: gray;
+    border-radius:5px;
+    margin: 5px;
+    padding: 10px;
+      }
+    .column-8{
+    flex-grow: 8;
+    background-color: gray;
+      border-radius:5px;
+      margin: 5px;
+      padding: 10px;
+      }
+    .column-9{
+    flex-grow: 9;
+    background-color: gray;
+      border-radius:5px;
+      margin: 5px;
+      padding: 10px;
+      }
+    .column-10{
+    flex-grow: 10;
+    background-color: gray;
+      border-radius:5px;
+      margin: 5px;
+      padding: 10px;
+      }
+    .column-11{
+      flex-grow: 11;
+      background-color: gray;
+      border-radius:5px;
+      margin: 5px;
+      padding: 10px;
+      }
+    .column-12{
+      background-color: gray;
+      border-radius:5px;
+      margin: 5px;
+      padding: 10px;
+      flex-grow: 12;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="task">
+      <p>
+        Задание: сделать 12-колоночную сетку с помощью flexbox. В стилях должно
+        появиться 12 CSS классов (.column-1, column-2, ..., column-12), каждый
+        из которых задает элементу ширину x / 12 в зависимости от названия
+        класса.<br />
+        .column-1 задает ширину в 1/12 от ширины контейнера,<br />
+        .column-6 задает ширину в 1/6 от ширину контейнера.<br />
+        Расстояние между элементами 10px, внутренние паддинги внутри элемента -
+        10px<br />
+        Стили записывать в этом же файле в теге "style" <br />
+        Пример:
+      </p>
+      <img src="tasks-img/03.png" width="800" alt="" />
+    </div>
+
+    <div class="container">
+      <div class="column-1">column-1</div>
+      <div class="column-2">column-2</div>
+      <div class="column-3">column-3</div>
+      <div class="column-4">column-4</div>
+      <div class="column-5">column-5</div>
+      <div class="column-6">column-6</div>
+      <div class="column-7">column-7</div>
+      <div class="column-8">column-8</div>
+      <div class="column-9">column-9</div>
+      <div class="column-10">column-10</div>
+      <div class="column-11">column-11</div>
+      <div class="column-12">column-12</div>
+    </div>
+  </body>
+</html>

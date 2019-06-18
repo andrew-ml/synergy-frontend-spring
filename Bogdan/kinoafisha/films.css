@@ -1,0 +1,85 @@
+.films{
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+
+.films h1{
+    font-family: Trebuchet MS, Arial;
+}
+.film1 h3{
+    font-family: Trebuchet MS, Arial; 
+    color: #1344b0;
+    margin-left: 115px;
+
+}
+.film1 a{
+    text-decoration: none;
+    font-family: Trebuchet MS, Arial;
+}
+.film1 #photo{
+    position: absolute;
+}
+.film1 #Germany{
+    font-family: Trebuchet MS, Arial;
+    font-size: 14px;
+    color: grey;
+    margin-left: 115px;
+    margin-top: -15px;
+}
+.film1 #Director, #Actors, #Premier{
+    font-family: Trebuchet MS, Arial;
+    margin-top: -8px;
+    font-size: 14px;
+    margin-left: 115px;
+}
+#Seans{
+    font-family: Trebuchet MS, Arial;
+    margin-top: -8px;
+    margin-left: 115px;
+    font-size: 14px;
+}
+#Treilers, #photos{
+    font-size: 14px;
+    font-family: Trebuchet MS, Arial;
+}
+.film2{
+    margin-top: 20px;
+}
+
+.film2 h3{
+    font-family: Trebuchet MS, Arial; 
+    color: #1344b0;
+    margin-left: 115px;
+}
+.film2 #photo{
+    position: absolute;
+}
+.film2 a{
+    text-decoration: none;
+    font-family: Trebuchet MS, Arial;
+}
+.film2 #Belgium{
+    font-family: Trebuchet MS, Arial;
+    font-size: 14px;
+    color: grey;
+    margin-left: 115px;
+    margin-top: -15px;
+}
+.film2 #Director, #Actors, #Premier{
+    font-family: Trebuchet MS, Arial;
+    margin-top: -8px;
+    font-size: 14px;
+    margin-left: 115px;
+}
+#Seans2{
+    font-family: Trebuchet MS, Arial;
+    margin-top: -8px;
+    margin-left: 115px;
+    font-size: 14px;
+}
+#Treilers2, #photos2{
+    font-size: 14px;
+    font-family: Trebuchet MS, Arial;
+}

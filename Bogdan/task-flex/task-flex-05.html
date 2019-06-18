@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple HTML page</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .layout{
+ width: 1200px;
+ height: 1000px; 
+ display: flex;
+ margin: 50px auto;
+}
+.layout p{
+  margin-left: 16px;
+  color: black ;
+  font-family: bold;
+}
+
+nav {
+  height: 100%;
+  background-color: #dae7d5;
+  flex-basis: 300px;
+}
+
+header {
+  background-color: #a5ca4f;
+  flex-basis: 200px;
+}
+
+.container{
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_container{
+  flex-grow: 3;
+  display: flex;
+}
+
+article {
+  flex-grow: 2;
+}
+
+aside {
+  flex-basis: 300px;
+  background-color: #f5f5de;
+}
+
+footer {
+  background-color: #a5ca4f;
+  flex-basis: 200px;
+}
+    
+    </style>
+  </head>
+  <body>
+    <div class="task">
+      <p>
+        Задание: реализовать лейаут как на примере, ширина Nav и Aside по 300px,
+        Article растягивается на всю ширину страницы.<br />
+        Высота Footer и Header по 200px.<br />
+        При желании футер можно сделать sticky - это значит, что он всегда
+        прибит к низу страницы.
+        <br />
+        Пример:
+      </p>
+      <img src="tasks-img/05.png" width="800" alt="" />
+    </div>
+  <div class="layout">
+    <nav class="navigation"><p>Nav</p></nav>
+    <div class="container">
+        <header class="header"><p>Header</p></header> 
+          <div class="main_container">
+            <article class="article"><p>Article</p></article>
+            <aside class="aside"><p>Aside</p></aside>
+         </div>
+        <footer class="footer"><p>Footer</p></footer>
+    </div>
+  
+ 
+  </div>
+  </body>
+</html>
