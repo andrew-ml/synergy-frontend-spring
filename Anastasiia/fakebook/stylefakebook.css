@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+  .Back {
+    width: 895px;
+    height: 473px;
+    background-color: #eceff5;
+    display: flex;
+    flex-flow: column wrap;
+
+  }
+  .flex-container {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.flex-element {
+ order: 0;
+}
+
+.Fake {
+    width: 894px;
+    height: 44.5px;
+    background-color: #405a93;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fakebook {
+    width: 111.5px;
+    height: 18.5px;
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+
+}
+  .MobileApp {
+    width: 894.5px;
+    height: 43.5px;
+    background-color: #fefbe4;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+  }
+  .Get-the-mobile-app-and-browse-faster {
+    width: 245.5px;
+    height: 12.5px;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #405a93;
+  }
+
+  .Form {
+    margin: 14.5px;
+    width: 416.5px;
+    height: 87.5px;
+    border: solid 1px #d2d5d9;
+    background-color: #ffffff;
+    align-self: center;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column wrap;
+
+  }
+  .hr1 {
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+    width: 416px;
+    background-color: #d2d5d9;
+  }
+
+   input[type="text"]{
+    width: 410.5px;
+    height: 41px;
+    border: solid 0px #d2d5d9;
+    margin-left: 2px !important;
+    align-self: center;
+   }
+
+
+    input[type="password"]{
+        width: 410.5px;
+        height: 41px;
+        border: solid 0px #d2d5d9;
+        margin-left: 2px !important;
+        align-self: center;
+   }
+
+   input[placeholder].place1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    color: #757575; 
+    text-indent: 7px; 
+  }
+
+  
+  input[placeholder].place2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #757575;
+    text-indent: 7px; 
+
+  }
+  .Button {
+    width: 417px !important;
+    height: 36.5px !important;
+    border-radius: 5px;
+    background-color: #447add;
+    align-self: center;
+    justify-self: center;
+    margin-left: 14.25px;
+    border: solid 0px;
+
+    
+  }
+  input[value].place3 {
+    width: 40.5px;
+    height: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .hr2 {
+    width: 329px;
+    height: 1px;
+    background-color: #d2d5d9;
+    margin-top:20px;
+
+  }
+  .CreateAc {
+    width: 167px !important;
+    height: 36px !important;
+    border-radius: 5px;
+    background-color: #49a02d;
+    align-self: center;
+    border: solid 0px;
+  }
+  input[value].place4 {
+    width: 137.5px;
+    height: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .Forgot-Password-Help-Center {
+    width: 184px;
+    height: 11.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: #99add1;
+    margin-top: 10px;
+
+  }
+  .text{
+    color: #757575;
+  }
+  .a{
+    color: #757575;
+
+  }
+  
+ 
