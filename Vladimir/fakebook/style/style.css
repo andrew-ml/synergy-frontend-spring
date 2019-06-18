@@ -1,0 +1,109 @@
+body{
+  font-family: HelveticaNeueCyr;
+}
+.Color-Fill-1 {
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 895px;
+    height: 473px;
+    background-color: #eceff5;
+  }
+  .Rectangle-1 {
+    padding: 8.5px 0px;
+    background-color: #405a93;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .Rectangle-2 {
+    padding: 13.5px 0px;
+    background-color: #fefbe4;  
+  }
+  a.get{
+    margin-left: -43px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #405a93;  
+  }
+  .Rounded-Rectangle-1 {
+    margin-top: 14.5px;
+    padding-left: 10px;
+    width: 404px;
+    height: 39px;
+    border-radius: 5px 5px 0 0;
+    border: solid 1px #d2d5d9;
+    background-color: #ffffff;
+  }
+  .Rounded-Rectangle-2 {
+    display: block;
+    margin-top: -1px;
+    padding-left: 10px;
+    width: 404px;
+    height: 41px;
+    border-radius: 0 0 5px 5px;
+    border: solid 1px #d2d5d9;
+    background-color: #ffffff;
+  }
+input{
+    font-family: HelveticaNeueCyr;
+    font-size: 14px;
+    font-weight: 500;
+    color: #757575;
+}
+
+a.Log-In {
+    display: block;
+    width: 396px;
+    margin-top: 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none; 
+    user-select: none;
+    background-color: #447add;
+    padding: 10px;
+    outline: none;
+  } 
+  a.Log-In:hover { background-color: #6189d3; }
+  a.Log-In:active { background-color: #2253ad; }
+
+hr {
+    display: block;
+    margin-top: 20px;
+    width: 330px;
+    height: 1px;
+    background-color: #d2d5d9;
+    border:none !important;
+
+  }
+
+a.Create {
+    display: block;
+    margin-left: -1px;
+    margin-top: 20px;
+    width: 149px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none; 
+    user-select: none;
+    background-color: #49a02d;
+    padding: 10px;
+    outline: none;
+  } 
+  a.Create:hover { background-color: #62b548; }
+  a.Create:active { background-color: #3ea51d; }
+
+  .Forgot-Password {
+    margin-top: 16.5px;
+    margin-left: -3px;
+    height: 11.5px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  a {
+    text-decoration: none;
+    color: #99add1; 
+  }
