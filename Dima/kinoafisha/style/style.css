@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+section {
+    margin: 20px;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.filmPoster {
+    width: 100px;
+    padding: 3px;
+}
+
+.description {
+    width: 420px; 
+}
+
+.description h2 {
+    padding: 0 15px;
+}
+
+.description p {
+    padding: 0 0 5px 15px;
+    font-size: 15.5px;
+}
+
+.description ul {
+    padding-left: 50px;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+    color: #002c3e;
+    
+}
+
+.boldText {
+    font-weight: bold;
+}
+
