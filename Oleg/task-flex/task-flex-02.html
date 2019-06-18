@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple HTML page</title>
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .con1 {
+      width: 100%;
+      height: 100px;
+      background-color: #888888;
+      padding: 10px;
+    }
+
+    .con2 {
+      width: 48.1%;
+      height: 100px;
+      background-color: #888888;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .con3 {
+      width: 31.3%;
+      height: 100px;
+      background-color: #888888;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .ml10 {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="task">
+    <p>
+      Задание: сделать сетку с помощью flexbox. Элементы подстраиваются
+      равномерно под ширину контейнера, расстояние между элементами 10px,
+      внутренние паддинги внутри элемента - 10px<br />
+      Стили записывать в этом же файле в теге "style" <br />
+      Пример:
+    </p>
+    <img src="tasks-img/02.png" width="500" alt="" />
+  </div>
+
+  <div class="container">
+    <div class="con1">1</div>
+  </div>
+  <div class="container">
+    <div class="con2">1</div>
+    <div class="con2 ml10">2</div>
+  </div>
+  <div class="container">
+    <div class="con3">1</div>
+    <div class="con3 ml10">2</div>
+    <div class="con3 ml10">3</div>
+  </div>
+</body>
+
+</html>
