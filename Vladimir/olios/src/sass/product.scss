@@ -13,6 +13,7 @@
   margin-left: 72px;
   padding: 55px 38px;
   z-index: 1;
+  height: 100vh;
   box-shadow: 0 0 12.5px 0 rgba(219, 219, 219, 0.45);
   background-color: #ffffff;
 }
@@ -62,6 +63,7 @@
 .warstwa {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   flex: 2;
 }
 
