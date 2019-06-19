@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		/*Задание 1*/
+		.container	{
+			width: 500px;
+			margin: 0 auto;
+		}
+		form {
+			display: flex;
+		}
+		input {
+			margin-right: 10px;
+			flex-grow: 1;
+		}
+		/*Задание 1 конец*/
+
+		/*Задание 2*/
+		.red, .yellow {
+			color: #000;
+			padding: 20px 0;
+			text-align: center;
+			flex-shrink: 1;
+		}
+		.red {
+			background-color: red;
+			flex-basis: 235px;
+		}
+		.yellow {
+			background-color: yellow;
+			flex-basis: 78.3px;
+		}
+		.task-2 {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 20px;
+		}
+		/*Задание 2 конец*/
+	</style>
+	<!--/*Задание 1*/-->
+	<div class="container">
+		<form>
+			<input type="text">
+			<button>Click me</button>
+		</form>
+	</div>
+
+	<!--/*Задание 2*/-->
+	<div class="container task-2">
+		<div class="red">div column 1</div>
+		<div class="yellow">column 2</div>
+		<div class="yellow">column 3</div>
+		<div class="yellow">column 4</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'HelveticaNeue'; /* Имя шрифта */
+    src: url(fonts/HelveticaNeue.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: 'HelveticaNeueBold'; /* Имя шрифта */
+    src: url(fonts/HelveticaNeueBold.ttf); /* Путь к файлу со шрифтом */
+}
+body {
+    font-family: 'HelveticaNeue';
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrap {
+    width: 895px;
+    background-color: #eceff5;
+    height: 473px;
+    text-align: center;
+}
+.wrap__title {
+    font-family: 'HelveticaNeueBold';
+    font-size: 25px;
+    text-align: center;
+    background-color: #405a93;
+    color: #fff;
+    padding: 13px 0;
+    margin: 0;
+}
+.wrap__description {
+    background-color: #fefbe4;
+    text-align: center;
+    color: #405a93;
+    font-size: 14px;
+    padding: 17px 0;
+    margin-bottom: 15px;
+}
+.inputs-wrap {
+    border: solid 1px #d2d5d9;
+    border-radius: 5px;
+    width: 416px;
+    margin: 0 auto 15px;
+    overflow: hidden;
+}
+.inputs-wrap input:first-child {
+    border-bottom:solid 1px #d2d5d9;
+}
+.inputs-wrap input {
+    display: block;
+    width: 100%;
+    border:none;
+    font-size: 14px;
+    padding: 16px 12px;
+    color: #757575;
+}
+.inputs-wrap input:focus {
+    outline: none;
+}
+button {
+    font-family: 'HelveticaNeueBold';
+    border-radius: 5px;
+    background-color: #447add;
+    display: inline-block;
+    width: 416px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    cursor: pointer;
+}
+form {
+    margin-bottom: 20px;
+}
+.line {
+    width: 329px;
+    height: 1px;
+    background-color: #d2d5d9;
+    margin: 0 auto 20px;
+}
+.btn {
+    border-radius: 5px;
+    background-color: #49a02d;
+    padding:12px 15px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 18px;
+    display: inline-block;
+}
+.help-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.help-links__item {
+    display: inline-block;
+}
+.help-links__item:first-child {
+    position: relative;
+    padding-right: 6px;
+}
+.help-links__item:first-child:before {
+    content: '';
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #99add1;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+}
+.help-links__item-link {
+    font-size: 12px;
+    color: #99add1;
+    text-decoration: none;
+}
