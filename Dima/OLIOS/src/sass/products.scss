@@ -1,0 +1,153 @@
+$blue: #0023ff;
+
+.products {
+  background-color: #f0f0f0;
+  height: 100vh;
+  overflow-y: hidden;
+
+  @media (max-height: 722px) {
+    overflow-y: auto;
+  }
+
+  .products-title-container {
+    display: flex;
+    justify-content: space-between;
+
+    .living-room {
+      height: 28px;
+      margin-right: 12px;
+
+      a {
+        color: red;
+        text-transform: uppercase;
+        color: #c1c1c1;
+      }
+
+      svg {
+        position: relative;
+        top: 36px;
+        left: 19px;
+      }
+    }
+  }
+
+  .container {
+    width: 746px;
+    margin: 0 auto;
+    display: flex;
+
+    .products-title {
+      font-size: 36px;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+
+  .show-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+
+    a {
+      text-transform: uppercase;
+      color: $blue;
+    }
+  }
+}
+
+.product-item {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 209px;
+  padding: 17px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+
+  .product-item-image {
+    align-self: center;
+    margin-bottom: 35px;
+  }
+
+  .product-item-text {
+    display: flex;
+    flex-direction: column;
+
+    .product-item-title {
+      font-size: 15px;
+      text-transform: uppercase;
+      line-height: 0px;
+      margin-bottom: 9px;
+      font-weight: 300;
+    }
+
+    p {
+      color: #a8a8a8;
+      font-size: 9px;
+      margin-bottom: 12px;
+      line-height: 0px;
+    }
+
+    .cost {
+      color: #0023ff;
+      font-size: 9px;
+      font-weight: 700;
+    }
+  }
+}
+
+.product-item-s {
+  width: 171px;
+
+  img {
+    width: 80px;
+  }
+}
+
+.product-item-m {
+  width: 363px;
+  display: flex;
+  flex-direction: row;
+  padding: 60px 20px;
+
+  .product-item-image {
+    img {
+      width: 180px;
+      padding-top: 10px;
+      margin-right: 25px;
+    }
+  }
+}
+
+.product-item-l {
+  width: 555px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 45px;
+  padding-left: 60px;
+
+  .product-item-image {
+    margin-right: 50px;
+
+    img {
+      width: 220px;
+    }
+  }
+
+  .product-item-text {
+    .product-item-title {
+      font-size: 23px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-bottom: 36px;
+      font-size: 14px;
+    }
+
+    .cost {
+      font-size: 14px;
+    }
+  }
+}

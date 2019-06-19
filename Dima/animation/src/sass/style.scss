@@ -1,0 +1,112 @@
+@import "normalize";
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+}
+
+.loading-panel {
+  width: 400px;
+  height: 100px;
+  background-color: rgb(223, 210, 210);
+  border-radius: 10px;
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .loading-title {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+  }
+
+  .loading-line {
+    width: 360px;
+    height: 27px;
+    border: 1px solid grey;
+    border-radius: 4px;
+
+    .loading-progress {
+      background-color: rgb(13, 75, 18);
+      height: 100%;
+      width: 10px;
+      cursor: pointer;
+    }
+
+    .loading-progress:hover {
+      width: 100%;
+      transition: 1s;
+    }
+  }
+}
+
+.tetris-section {
+  display: block;
+  height: 400px;
+
+  .tetris {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .tetris-element {
+      width: 50px;
+      height: 50px;
+      background-color: #2424ac;
+      border: 1px solid black;
+      box-sizing: border-box;
+
+      &:last-child {
+        background-color: #fff;
+        border: none;
+      }
+    }
+  }
+}
+
+.tetris-section:hover {
+  .tetris {
+    align-items: flex-end;
+    transition: 1s;
+  }
+}
+
+.modal-window {
+  width: 400px;
+  height: 300px;
+  background-color: #ccc;
+  margin: 50px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.heart {
+  margin: 50px 0;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(2px);
+  }
+}
+
+.timer {
+  position: relative;
+  margin: 50px 0;
+
+  .clock-arrow {
+    position: absolute;
+    top: 27%;
+    right: 45%;
+    transition: 2s;
+  }
+
+  .clock-arrow:hover {
+    transform: rotate(360deg);
+    transform-origin: 10px 88px;
+  }
+}
