@@ -1,24 +1,28 @@
-
 @import "normalize";
- 
 
 body {
-  min-height: 600px;
+  min-height: 800px;
   font-family: "Lato", sans-serif;
-  background: url(image/back_ground.jpg) 50% 100% no-repeat;
+  width: 100%;
+  height: 100%;
+  background: url(../image/background.png) no-repeat;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: 100%;
 }
 
 .navbar {
-  position: fixed;
   display: flex;
+  position: fixed;
   flex-direction: column;
   align-items: center;
-  top: 48px;
+  top: 50px;
   left: 0;
   bottom: 0;
-  width: 72px;
-  background: #fff;
+  width: 70px;
   box-shadow: 0 0 12px rgba(219, 219, 219, 0.5);
+  background: #fff;
 }
 
 .navbar .logo {
@@ -59,19 +63,19 @@ body {
 
 .side-nav-toggle {
   position: fixed;
-  z-index: 2;
   top: 87px;
   right: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 44px;
-  height: 44px;
+  width: 42px;
+  height: 42px;
   border: none;
   border-radius: 50%;
   background: #fff;
   box-shadow: 0 0 12px rgba(219, 219, 219, 0.5);
+  cursor: pointer;
 }
 
 .side-nav-toggle span {
@@ -80,10 +84,40 @@ body {
   height: 2px;
   margin-bottom: 2px;
   background: #0023ff;
+  box-shadow: 0 0 12px rgba(219, 219, 219, 0.5);
+  border-radius: 50%;
 }
 
 .side-nav-toggle span:last-child {
   margin-bottom: 0;
+}
+#modal:checked ~ .side-nav {
+  left: 1500px;
+  transition: 0.5s;
+}
+// #Modal:checked ~ .side-nav {
+//   left: 1800px;
+//   transition: 0.5s;
+// }
+
+#Modal {
+  display: none;
+}
+.close {
+  text-decoration: none;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background: #fff;
+  color: #0023ff;
+  font-weight: 700;
+  box-shadow: 0 0 12px rgba(219, 219, 219, 0.5);
+  border-radius: 50%;
+  top: 40px;
+  right: 35px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 42px;
 }
 
 .side-nav {
@@ -93,11 +127,13 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   right: 0;
+  left: 2000px;
   top: 48px;
   bottom: 0;
   width: 188px;
   background: #fff;
   box-shadow: 0 0 12px rgba(219, 219, 219, 0.5);
+  overflow: auto;
 }
 
 .side-nav ul {
@@ -152,14 +188,31 @@ body {
 
 main .home-page {
   text-align: center;
+  position: relative;
 }
 
+.newest {
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  text-transform: uppercase;
+  width: 831.5px;
+  height: 149.5px;
+  opacity: 0.7;
+  font-size: 250px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: rgba(231, 231, 231, 0.7);
+  left: 260px;
+  top: 0px;
+  // z-index: 100;
+}
 main .home-page .page-title {
   margin: 112px 0 0;
-  font-size: 110px;
-  font-weight: 100;
+  font-size: 160px;
+  font-weight: 200;
   letter-spacing: 2.8px;
   color: #000;
+  // z-index: 1;
 }
 
 main .home-page .page-subtitle {
@@ -168,6 +221,7 @@ main .home-page .page-subtitle {
   font-weight: 300;
   text-transform: uppercase;
   color: #000;
+  // z-index: 2;
 }
 
 main .home-page .view-more {
@@ -181,4 +235,5 @@ main .home-page .view-more {
   border: none;
   background: #0023ff;
   cursor: pointer;
+  // z-index: 2;
 }
