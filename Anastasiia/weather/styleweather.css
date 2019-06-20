@@ -1,6 +1,6 @@
 body {
   font-family: "Ubuntu", sans-serif;
-  height: 7446px;
+  /* height: 7446px; */
   background-color: #ffffff;
 }
 
@@ -185,7 +185,7 @@ header {
 
 main .section2 {
   width: 1170px;
-  margin: 50px auto;
+  margin: 50px auto 100px;
 }
 
 main .title-sct2 {
@@ -501,36 +501,30 @@ main .section2 .pictures .circle-temperature {
 
 main .container-text {
   display: flex;
-  margin: 0 auto;
 }
 
 main .container-text .left-text {
   flex: 1;
 }
 
-main .container-text .left-text {
+main .container-text .right-text {
   flex: 1;
 }
 
 main .container-text .quotes {
   text-align: left;
   color: #648cff;
-  margin: 0 auto;
+  margin: 0;
   line-height: 0;
-  padding: auto;
   font-size: 141.5px;
-}
-
-main .container-text .quotes-end span {
 }
 
 main .container-text .quotes-end {
-  text-align: left;
   color: #648cff;
-  margin: 0 auto;
+  margin: -30px 50px 0 0;
   line-height: 0;
-  padding: auto;
   font-size: 141.5px;
+  transform: rotate(180deg);
 }
 
 main .container-text .phrase-1 {
@@ -542,6 +536,47 @@ main .container-text .phrase-1 {
 main .container-text .phrase-2 {
   font-size: 18px;
   color: #353854;
+}
+
+main .container-text2 {
+  width: 543px;
+  margin-bottom: 200px;
+}
+
+main .section3 {
+  display: flex;
+  align-items: center;
+  height: 460px;
+  background-color: #648cff;
+}
+
+main .section3 .left {
+  flex: 1;
+}
+
+main .section3 .right {
+  flex: 1;
+  position: relative;
+}
+
+main .section3 .article {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+main .section3 .main-text {
+  width: 356px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+main .section3 .left img {
+  margin: 0 5px 0 0;
+}
+
+main .section3 .right img {
+  position: absolute;
 }
 
 footer {
