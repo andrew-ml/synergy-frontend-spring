@@ -1,0 +1,97 @@
+/* 
+:first-child
+:first-of-type
+:last-child
+:last-of-type
+:not()
+:nth-child()
+:nth-last-child()
+:nth-last-of-type()
+:nth-of-type()
+:only-child
+:only-of-type 
+*/
+
+ul {
+  display: flex;
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-right: 30px;
+  padding: 50px;
+  background: rgb(249, 249, 185);
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+li:not(:first-child) {
+  background: grey;
+}
+
+/* Задания: */
+
+/* -> выделить последний li элемент */
+.task-1 li:last-child {
+  background-color: #ff0000;
+}
+
+/* -> выделить все li элементы,  кроме второго */
+.task-2 li:not(:nth-child(2)) {
+  background-color: #ff0000;
+}
+
+/* -> выделить четные элементы */
+.task-3 li:nth-child(2n) {
+  background-color: #ff0000;
+}
+
+/* -> выделить кнопку, которая является единственным элементом в своем контейнере */
+/* -> сделать для этой кнопки разные цвета фона для трех состояний: hover, focus, active */
+
+.task-4 li button:only-child {
+  background-color: #ff0000;
+}
+
+/* -> сделать цвет посещенных ссылок желтым */
+.task-5 a:visited {
+  color: yellow;
+}
+
+/* -> сделать выбранному чекбоксу желтый фон */
+.task-6 div input[type="checkbox"]:active {
+  margin-left: 100px;
+}
+
+/* -> сделать disabled инпуту черный фон */
+.task-7 input[type="text"]:disabled {
+  background-color: #000;
+}
+
+.flex-container {
+  display: flex;
+  width: 350px;
+  flex-wrap: wrap;
+}
+
+.square {
+  height: 30px;
+  width: 30px;
+  margin: 2px;
+}
+
+.square:nth-child(3n-3) {
+  background-color: #935222;
+}
+
+.square:nth-child(3n-2) {
+  background-color: #e27e3a;
+}
+
+.square:nth-child(3n-1) {
+  background-color: #edb681;
+}

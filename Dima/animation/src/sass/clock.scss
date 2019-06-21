@@ -1,0 +1,50 @@
+.clock {
+  position: relative;
+  margin-top: 150px;
+
+  .arrow-svg {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 35px;
+
+    svg {
+      animation-name: time;
+      animation-duration: 3.6s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      display: block;
+      position: absolute;
+      top: 45px;
+      transform-origin: 10px 90%;
+
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  }
+}
+
+@keyframes time {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(90);
+  }
+
+  50% {
+    transform: rotate(180);
+  }
+
+  75% {
+    transform: rotate(270);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

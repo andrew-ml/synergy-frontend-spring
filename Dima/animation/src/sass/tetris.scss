@@ -1,0 +1,71 @@
+.tetris-section {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  border: 1px solid #000;
+  margin: 40px auto;
+  box-sizing: border-box;
+
+
+  .figure {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: figure-move;
+    animation-duration: 6s;
+    // animation-iteration-count: infinite;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    .figure-component {
+      background-color: rgb(32, 32, 131);
+      content: '';
+      width: 50%;
+      height: 50%;
+      border: 1px solid #000;
+      box-sizing: border-box;
+
+      &:last-child {
+        border: none;
+        background-color: #fff;
+      }
+    }
+  }
+
+
+}
+
+@keyframes figure-move {
+  0% {
+    top: 0;
+    left: 0;
+
+  }
+
+  25% {
+    top: 0;
+    left: calc(100% - 100px);
+    transform: rotate(90deg);
+  }
+
+  50% {
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+    transform: rotate(180deg);
+  }
+
+  75% {
+    top: calc(100% - 100px);
+    left: 0;
+    transform: rotate(270deg);
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    transform: rotate(360deg);
+  }
+}

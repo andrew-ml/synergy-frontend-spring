@@ -1,0 +1,32 @@
+.modal-window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+
+  .field {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    background-color: #ccc;
+    transition: 3s;
+    position: absolute;
+    animation-name: move-window;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.000, 0.635, 0.000, 0.975);
+  }
+}
+
+@keyframes move-window {
+
+  from {
+    transform: translateX(1000%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
