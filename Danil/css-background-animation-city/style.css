@@ -1,0 +1,41 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.wrapper{
+	display: flex;
+	height: 100vh;
+	position: relative;
+}
+.main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(img/nochnoj_gorod.jpg) center no-repeat;
+	background-size: cover;
+	z-index: 3;
+}
+.main_title{
+	font-size: 100px;
+	color: #ffffff;
+	font-family: 'Arial';
+}
+.overlay{
+	width: 4%;
+	height: 100%;
+	position: relative;
+	z-index: 4;
+	background: url(img/New-York.jpg) center no-repeat;
+	background-attachment: fixed;
+	transition: 1.2s linear;
+}
+.overlay:hover{
+	transition: 0s linear;
+	opacity: 0;
+}
