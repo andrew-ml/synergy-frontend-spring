@@ -1,0 +1,43 @@
+@import "normalize";
+
+.button1 {
+  width: 229px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #247edd;
+  box-shadow: inset 0 2px rgba(255, 255, 255, 0.4);
+  border: solid 2px #3875c4;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 0.12) 51%,
+    rgba(0, 0, 0, 0.04)
+  );
+  &:hover {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0) 50%,
+      rgba(0, 0, 0, 0.05) 51%,
+      rgba(0, 0, 0, 0.04)
+    );
+  }
+  &:active {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.2),
+      rgba(255, 255, 255, 0.16)
+    );
+  }
+}
+
+span {
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
