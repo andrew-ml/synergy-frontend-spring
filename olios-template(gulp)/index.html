@@ -2,102 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="HTML tutorial website" />
-    <meta name="keywords" content="HTML,CSS,JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
     <title>OLIOS-NEWEST FURNITURE SHOP TEMPLATE</title>
   </head>
-
   <body>
-    <div class="first-screen">
-      <div class="content">
-        <div class="bg-content">
-          NEWEST
-        </div>
-        <div class="title-content">
-          <h1 class="olios">OLIOS</h1>
-          <p class="description-titile">NEWEST FURNITURE SHOP TEMPLATE</p>
-          <button class="act-content" type="submit">VIEW MORE</button>
-        </div>
+    <div class="main">
+      <div class="bg-newest">
+        <p>NEWEST</p>
       </div>
-      <aside class="side-bar">
-        <div class="logo">
-          <a href="#"> <img src="img/LOGO.svg" /> </a>
+      <div class="content">
+        <h1>OLIOS</h1>
+        <p>NEWEST FURNITURE SHOP TEMPLATE</p>
+        <button>VIEW MORE</button>
+      </div>
+    </div>
+    <aside class="left-menu">
+      <a href="#" class="logo"> <img src="img/LOGO.png"/></a>
+
+      <ul class="nav-list">
+        <li class="nav-items">
+          <a href="#">
+            <img src="img/Home.svg" />
+          </a>
+        </li>
+        <li class="nav-items">
+          <a href="#">
+            <img src="img/Basket.svg" />
+          </a>
+        </li>
+        <li class="nav-items">
+          <a href="#">
+            <img src="img/Search.svg" alt="" />
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="download">
+        <img src="img/In.svg" alt="" />
+      </a>
+    </aside>
+    <aside class="right-menu">
+      <div class="right-menu-flex">
+        <div class="aside-button">
+          <a href="#" class="menu-right-button">
+            <img src="img/circle.png" alt="круг"
+          /></a>
         </div>
-        <nav class="nav-menu">
-          <ul>
-            <li class="items">
-              <a href="#">
-                <img class="icons" width="20" height="23" src="img/Home.svg" />
-              </a>
+        <nav class="sidebar-menu">
+          <ul class="aside-navigation">
+            <li class="client-choice">
+              <a href="#" class="link-nav"> LIVING ROOM</a>
+              <a href="#"><img src="img/livingroom.png" /> </a>
             </li>
-            <li class="items">
-              <a href="#">
-                <img
-                  class="icons"
-                  width="20"
-                  height="23"
-                  src="img/Basket.svg"
-                />
-              </a>
+            <li class="client-choice">
+              <a href="#" class="link-nav"> OFFICE</a>
+              <a href="#"><img src="img/office.png" /> </a>
             </li>
-            <li class="items">
-              <a href="#">
-                <img
-                  class="icons"
-                  width="20"
-                  height="23"
-                  src="img/Search.svg"
-                />
-              </a>
+            <li class="client-choice">
+              <a href="#" class="link-nav"> FOR KIDS</a>
+              <a href="#"><img src="img/forkids.png" /> </a>
+            </li>
+            <li class="client-choice">
+              <a href="#" class="link-nav"> KITCHEN</a>
+              <a href="#"><img src="img/kitchen.png" /> </a>
+            </li>
+            <li class="client-choice">
+              <a href="#" class="link-nav"> ACCESORIES</a>
+              <a href="#"><img src="img/accesories.png" /> </a>
             </li>
           </ul>
         </nav>
-        <div class="search">
-          <a href="#">
-            <img
-              class="downoad-icons"
-              width="20"
-              height="23"
-              src="img/In.svg"
-            />
-          </a>
+        <div class="link-categories">
+          <a href="#" class="search-nav"> SHOW ALL CATEGORIES</a>
+          <hr />
         </div>
-      </aside>
-    </div>
-    <div class="left-menu">
-      <a href="#" class="humburger">
-        <div class="lines">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </a>
-      <nav class="slide-menu">
-        <div class="item-menu">
-          <a href="#" class="item-link">LIVING ROOM</a>
-          <a href="#" class="item-image"><img src="img/livingroom.png"> </a>
-        </div>
-        <div class="item-menu">
-            <a href="#" class="item-link">OFFICE</a>
-            <a href="#" class="item-image"><img src="img/office.png"> </a>
-          </div>
-          <div class="item-menu">
-              <a href="#" class="item-link">FOR KIDS</a>
-              <a href="#" class="item-image"><img src="img/forkids.png"> </a>
-            </div>
-            <div class="item-menu">
-                <a href="#" class="item-link">KITCHEN</a>
-                <a href="#" class="item-image"><img src="img/kitchen.png"> </a>
-              </div>
-              <div class="item-menu">
-                  <a href="#" class="item-link">ACCESORIES</a>
-                  <a href="#" class="item-image"><img src="img/accesories.png"> </a>
-                </div>
-
-
-        </div>
-      </nav>
-    </div>
+      </div>
+    </aside>
   </body>
 </html>
