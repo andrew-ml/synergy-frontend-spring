@@ -34,9 +34,19 @@ header {
     }
     @media (max-width: 992px) {
       flex-direction: column;
+      .main-nav {
+        border-top: 1px solid #ffffff; /* Линия сверху текста */
+        border-bottom: 1px solid #ffffff; /* Линия снизу текста */
+        padding: 10px;
+      }
     }
     @media (max-width: 480px) {
       flex-direction: column;
+      .main-nav {
+        border-top: 1px solid #ffffff; /* Линия сверху текста */
+        border-bottom: 1px solid #ffffff; /* Линия снизу текста */
+        padding: 10px;
+      }
     }
 
     .logo {
@@ -205,6 +215,9 @@ header {
         font-size: 20px;
         background-color: #ffffff;
         color: #6ca3ff;
+        @media (max-width: 480px) {
+          display: none;
+        }
       }
       .circle-location-1 {
         width: 90px;
@@ -224,6 +237,9 @@ header {
         bottom: -24px;
         background: #fcec64;
         color: #648cff;
+        @media (max-width: 480px) {
+          display: none;
+        }
       }
     }
   }

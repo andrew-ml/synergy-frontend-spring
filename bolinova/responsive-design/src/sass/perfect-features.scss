@@ -19,9 +19,15 @@
     .feature-col {
       flex: 1;
       margin-right: 45px;
+      @media (max-width: 992px) {
+        margin-right: 0;
+      }
 
       &:last-child {
         margin-right: 0;
+      }
+      @media (max-width: 992px) {
+        margin-left: 0;
       }
     }
   }
@@ -53,6 +59,9 @@
           font-weight: bold;
           line-height: 1.5;
           color: #353854;
+          @media (max-width: 992px) {
+            margin-right: 0;
+          }
         }
         .feature-text {
           margin: 0;
