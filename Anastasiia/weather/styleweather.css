@@ -260,9 +260,15 @@ main .img-wrapper {
   position: relative;
   margin: 0px 0 40px 400px;
   display: inline-block;
+  -webkit-box-shadow: 4px 25px 43px 0px rgba(214, 206, 214, 1);
+  -moz-box-shadow: 4px 25px 43px 0px rgba(214, 206, 214, 1);
+  box-shadow: 4px 25px 43px 0px rgba(214, 206, 214, 1);
 }
 
 main .img-wrapper .telef {
+  -webkit-box-shadow: 4px 25px 43px 0px rgba(214, 206, 214, 1);
+  -moz-box-shadow: 4px 25px 43px 0px rgba(214, 206, 214, 1);
+  box-shadow: 4px 25px 43px 0px rgba(214, 206, 214, 1);
   position: absolute;
   width: 318px;
   height: 564px;
@@ -688,7 +694,7 @@ footer .hr {
   background-color: rgb(67, 71, 105);
   width: 100%;
   margin: 0px;
-  height: 6px;
+  height: 3px;
   border: 0px;
 }
 
