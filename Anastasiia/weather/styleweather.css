@@ -185,7 +185,7 @@ header {
 
 main .section2 {
   width: 1170px;
-  margin: 50px auto;
+  margin: 50px auto 100px;
 }
 
 main .title-sct2 {
@@ -504,10 +504,7 @@ main .container-text {
   margin: 0 auto;
 }
 
-main .container-text .right-text {
-  flex: 1;
-}
-
+main .container-text .right-text,
 main .container-text .left-text {
   flex: 1;
 }
@@ -515,19 +512,19 @@ main .container-text .left-text {
 main .container-text .quotes {
   text-align: left;
   color: #648cff;
-  margin: 0 auto;
+  margin: 0;
   line-height: 0;
   padding: auto;
   font-size: 141.5px;
 }
 
-main .container-text .quotes-end span {
-}
+/* main .container-text .quotes-end span {
+} */
 
 main .container-text .quotes-end {
   text-align: left;
   color: #648cff;
-  margin: 0 auto;
+  margin: -30px 50px 0 0;
   /* margin: -30px 50px 0 0; */
   line-height: 0;
   padding: auto;
@@ -564,13 +561,15 @@ main .section3 .container {
 }
 
 main .section3 .left {
+  flex: 1;
 }
 
 main .section3 .right {
+  flex: 1;
   display: flex;
   position: relative;
-
-  /* justify-content: right; */
+  justify-content: flex-end;
+  /* margin-left: 150px; */
 }
 
 main .section3 .article {
@@ -590,7 +589,9 @@ main .section3 .left img {
 }
 
 main .section3 .right img {
-  margin-bottom: -450px;
+  position: absolute;
+
+  /* margin-bottom: -450px; */
 }
 
 main .section3 .right .screen-center {
@@ -600,7 +601,7 @@ main .section3 .right .screen-center {
 }
 
 main .section3 .right .screen-left {
-  margin-left: 150px;
+  right: 325px;
   z-index: 1;
   filter: blur(5px);
   /* margin-top: 40px; */
@@ -608,7 +609,7 @@ main .section3 .right .screen-left {
 
 main .section3 .right .screen-right {
   z-index: 1;
-  margin-left: -100px;
+  margin-left: 110px;
   filter: blur(5px);
 }
 
