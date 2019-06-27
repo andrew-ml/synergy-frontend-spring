@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <h1 class="d-flex justify-content-center">Checkout form</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-8 hide">
+          <p>Billing adress</p>
+          <form>
+            <div class="form-group row">
+              <div class="col">
+                <label for="exampleInputEmail1">First name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder=""
+                />
+              </div>
+              <div class="col">
+                <label for="exampleInputPassword1">Last name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder=""
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputPassword1">Username</label>
+              <label class="sr-only" for="inlineFormInputGroupUsername"
+                >Username</label
+              >
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inlineFormInputGroupUsername"
+                  placeholder="Username"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1"
+                >Email<span>(Optional)</span></label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="you@example.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Adress</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="123 Main str"
+              />
+            </div>
+            <hr />
+            <button type="submit" class="btn btn-primary btn-lg btn-block">
+              Continue to checkout
+            </button>
+          </form>
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <p class="right-menu col">Your cart</p>
+            <div>
+              <span class="badge badge-pill badge-secondary">3</span>
+            </div>
+          </div>
+          <div class="list-group">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between"
+            >
+              <div>
+                Product name
+                <small id="emailHelp" class="form-text text-muted"
+                  >Brief description</small
+                >
+              </div>
+              <div class="cost">$12</div>
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between"
+            >
+              <div>
+                Second product
+                <small id="emailHelp" class="form-text text-muted"
+                  >Brief description</small
+                >
+              </div>
+              <div class="cost">$8</div>
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between active1"
+            >
+              <div>
+                Promo code
+                <small id="emailHelp" class="form-text text-muted"
+                  >EXAMPLECODE</small
+                >
+              </div>
+              <div class="cost">-$5</div>
+            </a>
+
+            <a
+              href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between "
+            >
+              <div>Total(USD)</div>
+              <div class="cost">$20</div>
+            </a>
+          </div>
+          <div class="list-group mt-3">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between"
+            >
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Promo code"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <div class="input-group-append">
+                  <button
+                    class="btn btn-secondary"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    Redeem
+                  </button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="">© 2017-2018 Company Name</footer>
+  </body>
+</html>

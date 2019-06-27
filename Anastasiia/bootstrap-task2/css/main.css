@@ -1,0 +1,41 @@
+span {
+  color: grey;
+}
+.right-menu {
+  color: grey;
+}
+
+body {
+  height: 100%;
+}
+/*
+.hide {
+    display: none;
+}
+*/
+.container {
+  min-height: calc(100vh - 80px);
+}
+
+.cost {
+  color: grey;
+  font-size: 14px;
+}
+
+.list-group-item-action:last-of-type .cost {
+  color: black;
+}
+.active1 small,
+.active1 * {
+  color: darkseagreen !important;
+  background-color: inherit !important;
+}
+
+.badge {
+  margin-right: 15px;
+}
+
+footer {
+  /* text-align: center; */
+  text-align: center;
+}
