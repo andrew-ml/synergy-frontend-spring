@@ -1,0 +1,16 @@
+@import "bootstrap/bootstrap.scss";
+@mixin title($color, $padding, $margin, $font-size, $type: none) {
+  color: $color;
+  padding: $padding;
+  font-size: $font-size;
+  @if ($type==rounded) {
+    border-radius: 5px;
+    border-color: aqua;
+  }
+}
+
+body {
+  h1 {
+    @include title(#47657365, 20px, 15px, 56px, $rounded: true);
+  }
+}
