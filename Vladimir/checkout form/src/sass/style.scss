@@ -1,0 +1,14 @@
+@import "bootstrap/bootstrap";
+
+@mixin myButton() {
+  color: #fff;
+  text-decoration: none;
+  background: rgb(212, 75, 56);
+  padding: 0.7em 1.5em;
+  border-radius: 5px;
+  border: none;
+}
+
+.myBtn {
+  @include myButton();
+}
