@@ -1,0 +1,95 @@
+@import "src/sass/scss/bootstrap.scss";
+
+body {
+  background: #f9fafc;
+}
+
+h6 {
+  font-family: Lato;
+}
+
+p {
+  margin: 0;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Lato;
+  .point-nav {
+    margin-top: 23px;
+    margin-left: 1px;
+    width: 4px;
+    height: 4px;
+    background-color: #ff565c;
+  }
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Oswald;
+}
+
+.img-container {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .technology {
+    position: absolute;
+    padding: 11px 29px;
+    top: 320px;
+    left: -3px;
+    background-color: #ff565c;
+    span {
+      font-family: Oswald;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1.05px;
+      color: #ffffff;
+    }
+  }
+}
+
+.img-small-container {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .technology {
+    position: absolute;
+    padding: 11px 29px;
+    top: 130px;
+    left: -3px;
+    background-color: #ff565c;
+    span {
+      font-family: Oswald;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1.05px;
+      color: #ffffff;
+    }
+  }
+}
+
+.about-h6 {
+  margin-top: 14px;
+  font-size: 23px;
+  font-weight: 600;
+}
+.about-p {
+  margin-top: 9px;
+  margin-bottom: 65px;
+  opacity: 0.7;
+  font-family: Lato;
+  font-size: 16px;
+}
+
+footer {
+  margin-top: 100px;
+  height: 160px;
+  background: black;
+}
