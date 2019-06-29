@@ -1,0 +1,50 @@
+.btn-class {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background: #247edd;
+  /* height: 70px;
+  width: 230px; */
+  padding: 11px 43px 16px;
+  border-radius: 10px;
+  border: #3875c4 2px;
+  box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.4);
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 256, 0.12) 50%,
+    rgba(0, 0, 0, 0) 51%,
+    rgba(0, 0, 0, 0.04) 100%
+  );
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 34px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  background: #3c9afe;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 256, 0.12) 50%,
+    rgba(0, 0, 0, 0) 51%,
+    rgba(0, 0, 0, 0.04) 100%
+  );
+}
+
+.btn:active {
+  box-shadow: none;
+  background: #247edd;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(255, 255, 255, 0.16) 100%
+  );
+}
