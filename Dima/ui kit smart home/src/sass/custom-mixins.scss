@@ -1,0 +1,11 @@
+@mixin btn ($height) {
+  height: $height;
+  line-height: $height;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin jc-center() {
+  display: flex;
+  justify-content: center;
+}

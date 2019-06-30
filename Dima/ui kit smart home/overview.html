@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="HTML tutorial website" />
+  <meta name="keywords" content="HTML,CSS,JavaScript" />
+  <title>Smart home</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<header>
+  <nav class="overview-navigation">
+    <ul>
+      <li class="overview-main-logo">
+        <img src="img/main-logo.png" alt="">
+      </li>
+      <li class="overview-header-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </li>
+      <li class="hard-burger">
+        <span class="line"><span class="dot"></span></span>
+        <span class="line"><span class="dot"></span></span>
+        <span class="line"><span class="dot"></span></span>
+      </li>
+      <li class="overview-header-progressbar">
+        <div class="bar">
+          <div class="progress">
+          </div>
+        </div>
+      </li>
+      <li>
+        <ul>
+          <li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"
+              viewBox="0 0 20 20">
+              <image id="question-icon.svg" width="20" height="20"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAflBMVEVEVWtVaYBYbYRccopheZBje5NgeI9YbYRheJBYbYRVaYBbcIhYbYRVaoFheI9VaoFieZFXbINieZFYbYVVaoFdc4tiepFdc4tieZFYbYRZboVYbYVXbINbcYhWa4JheJBWa4JedYxVaYBYbYRbcIhbcYhkfJRlfZVke5MAAACgDj2EAAAAJnRSTlMADIzf+/75h/qIBsiKG/kf/Hz9lhfj/eT7i6SXZc9P+UbtDo7J0VAO37wAAAABYktHRCnKt4UkAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wYcEBMzC5Jd/wAAALFJREFUGNNVkdsWgiAQRQ+oZYipUKndSwX//wsLHEXPC5u9FswwAC6MR7FJdhFnWLJPLSU9kBKZXSUTXnqXyjyX/kDmHHd0LBwWR8f8X6N0IFEpVUE6Lhm0vymHslbh5Dca51DjgsKvNZogW1z92sAs7ob76MEgmd0DT2KD1yzf+BA1oZDASFRTS5toan6d8gt0xABB517cb2U/jW5YHx4ETbQNQ27D6JmuY2PiWk/f8QPgCSkObZFHhwAAAABJRU5ErkJggg==" />
+            </svg>
+          </li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16"
+              viewBox="0 0 20 16">
+              <image id="message-icon.svg" width="20" height="16"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAMAAAAhxq8pAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAV1BMVEVEVWtXbIRieZFXbINieZFYbYRieZFVaoFbcYhdc4tVaoFWa4Jfdo5Xa4Nje5NZb4ZVaYBVaYBke5NVaoFdc4tfdo5VaoFXbYRXbIRiepFlfZVkfJQAAABfSOo8AAAAGnRSTlMAff18+4f8Gc/mNVz1Xf6uBgj+N+f0F4Z//fNg0C8AAAABYktHRBycBEEHAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wYcEBMrGP7FqQAAAG1JREFUGNO1ztsOQDAQRdFjUKWo++X4///UtAlSXu23WZlkBokwSlJkfCUgc/UUlZMOUejbdAGPZQVTB6obVKVHtrbr7UAOtu9sy4Buw2CcphFm9mNAHnoBFn3wie7qul5fgB/9gvI2wbbHprYT9P0cp3k96skAAAAASUVORK5CYII=" />
+            </svg>
+          </li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="20"
+              viewBox="0 0 18 20">
+              <image id="notification-icon.svg" width="18" height="20"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAMAAAC3SZ14AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAb1BMVEVEVWsfjvpPYnlFV20fjvofjvofjvofjvpSZn1NX3Yohd8fjvofjvpUaYBOYXcfjvpOYXcfjvpSZn1MX3YfjvpHWW9PYnlQZHtUaYBMX3VEVWtFVmxDV3EfjvoxcrQkhuYgjfcngdlDV3AxcrMAAABw0oy7AAAAGnRSTlMAAMX+CYHc+Wrh+MUKBtWA0t1r4d79v6QS5VXwN+sAAAABYktHRCS0BvmZAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wYcEBQTf73r8AAAAINJREFUGNONz+sSgiAQhmFS0eyk5flTw/L+77GFXafQcab3F/PAwKIUF4TBQRJRQB/pOIl1JHRMgeE02s4XC9cbqOfIZZZyKzBCd5KHE0xCCVEB71RJVDEtd2n3vmt4fV8Uwns2k+G58BtP79Hylz+o9qjeiDOsU/s1tN341HZ918r6A/qDF9JMTibXAAAAAElFTkSuQmCC" />
+            </svg>
+          </li>
+        </ul>
+      </li>
+      <li class="username-list">
+        <p>Username</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="6.531" height="3.406" viewBox="0 0 6.531 3.406">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #657d95;
+                fill-rule: evenodd;
+              }
+            </style>
+          </defs>
+          <path id="cursor-down.svg" class="cls-1"
+            d="M353.43,408.279a0.54,0.54,0,0,1-.014.549l-2.708,2.332a0.541,0.541,0,0,1-.918,0l-2.708-2.332a0.542,0.542,0,0,1,.459-0.828h5.416A0.543,0.543,0,0,1,353.43,408.279Z"
+            transform="translate(-347 -408)" />
+        </svg>
+
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+
+</body>
+
+</html>

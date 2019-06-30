@@ -1,0 +1,1 @@
+[2019-06-28 15:50:48] layer "settings-icon.svg": Duplicate path: settings-icon.svg

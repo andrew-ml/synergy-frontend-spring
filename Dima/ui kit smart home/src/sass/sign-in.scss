@@ -1,0 +1,132 @@
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+
+  .sign-in-container {
+    width: 320px;
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+
+    .sign-in-logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 65px;
+
+      @media (max-height: 992px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    .sign-in-form {
+      flex: 1;
+
+      .sign-in-form-title {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        font-weight: 300;
+        margin-bottom: 50px;
+
+        @media (max-height: 992px) {
+          margin-bottom: 20px;
+        }
+      }
+
+      form {
+        label {
+          color: #fff;
+          font-weight: 100;
+          display: block;
+        }
+
+        input {
+          height: 30px;
+          border-radius: 3px;
+          border: 1px solid $light-blue;
+          background-color: #20293c;
+          padding: 10px;
+          margin-bottom: 30px;
+          width: 100%;
+
+          @media (max-height: 720px) {
+            margin-bottom: 10px;
+          }
+        }
+
+        ::-webkit-input-placeholder {
+          color: #208bf3;
+          font-size: 12px;
+        }
+
+        .sign-in-btn {
+          background-color: $light-blue;
+          border: none;
+          outline: none;
+          display: flex;
+          width: 100%;
+          margin-bottom: 40px;
+          border-radius: 3px;
+          transition: 0.5s;
+          @include btn(33px);
+
+          @media (max-height: 750px) {
+            margin-bottom: 10px;
+          }
+
+          &:hover {
+            background-color: #156abe;
+          }
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .forgot-password-link {
+      @include jc-center();
+
+      a {
+        color: #7c8fa1;
+        font-size: 12px;
+        transition: 0.5s;
+
+        &:hover {
+          color: #9fabb6;
+        }
+      }
+    }
+
+    .registered-placeholder {
+      font-size: 12px;
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+      @include jc-center();
+
+      .registered-link {
+        color: #7c8fa1;
+        margin-right: 15px;
+        transition: 0.5s;
+
+        &:hover {
+          color: #9fabb6;
+        }
+      }
+
+      .sign-up-link {
+        color: $light-blue;
+        font-weight: 700;
+        transition: 0.5s;
+
+        &:hover {
+          color: #5ca2e9;
+        }
+      }
+    }
+  }
+}
