@@ -2,7 +2,10 @@ var gulp = require("gulp");
 var $ = require("gulp-load-plugins")();
 var connect = require("gulp-connect");
 var browserSync = require("browser-sync").create();
+var ejs = require("gulp-ejs");
 var sassPaths = ["src/sass"];
+var svgSprite = require("gulp-svg-sprite");
+const rename = require("gulp-rename");
 
 gulp.task("webserver", function() {
   connect.server({
@@ -27,6 +30,33 @@ gulp.task("html", function() {
 
 gulp.task("js", function() {
   gulp.src("*.js").pipe(connect.reload());
+});
+
+gulp.task("sprite", function() {
+  gulp
+    .src("src/images/**/*.svg")
+    .pipe(
+      svgSprite({
+        mode: {
+          defs: {
+            example: true
+          }
+        }
+      })
+    )
+    .pipe(gulp.dest("out"));
+});
+
+gulp.task("templates", function() {
+  gulp
+    .src("./templates/*.ejs")
+    .pipe(
+      ejs({
+        msg: "Hello Gulp!"
+      })
+    )
+    .pipe(rename({ extname: ".html" }))
+    .pipe(gulp.dest("./"));
 });
 
 gulp.task("sass", function() {
