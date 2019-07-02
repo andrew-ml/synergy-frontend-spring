@@ -1,0 +1,30 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.table {
+	width: 550px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.block {
+	width: 50px;
+	height: 50px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	background-color: black;
+}
+
+.table div:nth-child(3n) {
+	background-color: #935222;
+}
+
+.table div:nth-child(3n-1) {
+	background-color: #edb681;
+}
+
+.table div:nth-child(3n-2) {
+	background-color: #e27e3a
+}
