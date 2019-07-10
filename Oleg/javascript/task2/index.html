@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task JS2</title>
+</head>
+
+<body>
+    <h1> Task JavaScript #2 complete <h1>
+
+            <script>
+                let action = prompt('Введите значение математической операции, которую хотите выполнить "+, -, *, /"');
+                if (action == '/') {
+                    let n1 = prompt('Введите делимое');
+                    let n2 = prompt('Введите делитель');
+                    let n = (+n1 / +n2);
+
+                    if (n == Infinity) {
+                        alert('∞');
+                    } else if (n == -Infinity) {
+                        alert('-∞');
+                    } else if (n1 == '∞' && n2 >= 0) {
+                        alert('∞');
+                    } else if (n1 <= -1 && n2 == '∞') {
+                        alert('-∞');
+                    } else if (n1 >= 0 && n2 == '∞') {
+                        alert(0);
+                    } else if (n1 == 0 && n2 == 0) {
+                        alert('Невозможно выполнить математическую операцию');
+                    } else if (n1 == '∞' && n2 == '∞') {
+                        alert('Невозможно выполнить математическую операцию');
+                    } else if (n1 === null || n2 === null) {
+                        alert('Вы не ввели одно или оба значения');
+                    } else {
+                        alert('Результат деления Ваших чисел: ' + n);
+                    };
+
+                } else if (action == '+') {
+                    let n1 = prompt('Введите первое число');
+                    let n2 = prompt('Введите второе число');
+                    let n = (+n1 + +n2);
+
+                    if (n1 == '∞' && n2 >= 0 || n1 >= 0 && n2 == '∞') {
+                        alert('∞');
+                    } else if (n1 == '-∞' && n2 >= 0 || n1 >= 0 && n2 == '-∞') {
+                        alert('-∞');
+                    } else if (n1 == null || n2 == null) {
+                        alert('Вы не ввели одно или оба значения');
+                    } else {
+                        alert('Сумма Ваших чисел: ' + n);
+                    };
+
+                } else if (action == '-') {
+                    let n1 = prompt('Введите первое число');
+                    let n2 = prompt('Введите второе число');
+                    let n = (+n1 - +n2);
+
+                    if (n1 == '∞' || n2 == '-∞') {
+                        alert('∞');
+                    } else if (n1 == '-∞' || n2 == '∞' || n2 == '-∞') {
+                        alert('-∞');
+                    } else if (n1 == null || n2 == null) {
+                        alert('Вы не ввели одно или оба значения');
+                    } else {
+                        alert('Сумма Ваших чисел: ' + n);
+                    };
+
+                } else if (action == '*') {
+                    let n1 = prompt('Введите множимое');
+                    let n2 = prompt('Введите множитель');
+                    let n = (+n1 * +n2);
+
+                    if (n1 == '∞' && n2 >= 1 || n1 == '-∞' && n2 <= -1) {
+                        alert('∞');
+                    } else if (n1 == '-∞' && n2 >= 1 || n1 == '∞' && n2 <= -1) {
+                        alert('-∞');
+                    } else if (n1 == '∞' && n2 == 0 || n1 == 0 && n2 == '∞') {
+                        alert('Невозможно выполнить математическую операцию');
+                    } else if (n1 == '-∞' && n2 == 0 || n1 == 0 && n2 == '-∞') {
+                        alert('Невозможно выполнить математическую операцию');
+                    } else if (n1 == null || n2 == null) {
+                        alert('Вы не ввели одно или оба значения');
+                    } else {
+                        alert('Умноение Ваших чисел равно: ' + n);
+                    };
+
+                } else {
+                    alert('Вы ничего не ввели или ввели не верное значение');
+                };
+
+
+            </script>
+</body>
+
+</html>
