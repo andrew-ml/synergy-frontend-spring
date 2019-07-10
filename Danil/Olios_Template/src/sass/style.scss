@@ -221,6 +221,7 @@ body {
   box-shadow: 0 0 12.5px 0 rgba(219, 219, 219, 0.5);
   transform: translateX(+100%);
   transition: 0.5s;
+  overflow: auto;
   .nav_right_links {
     display: flex;
     flex-direction: column;
