@@ -50,14 +50,14 @@ if (n <= 1) {
 
 /*function math() {
   while (1) {
-    let x = Math.floor(Math.random() * 10);
-    let y = Math.floor(Math.random() * 10);
-    let res = +prompt(x + " + " + y + " =", "");
-    if (res == "") {
+    let x = Math.floor(Math.random(1) * 10);
+    let y = Math.floor(Math.random(1) * 10);
+    let res = +prompt(x + " x " + y + " =", "");
+    if (res == "" && res !== 0) {
       break;
-    } else if (res == x + y) {
+    } else if (res == x * y) {
       alert("Правильно");
-    } else if (res !== x + y) {
+    } else if (res !== x * y) {
       alert("Не правильно");
     }
   }
