@@ -31,7 +31,7 @@ function task_4() {
 
     if (i == sum) {
       alert("Верно " + x + " * " + y + " = " + sum);
-    } else if (i === "") {
+    } else if (i === "" || i === " ") {
       alert("Ну хорошо, отдохни!");
       break;
     } else {
