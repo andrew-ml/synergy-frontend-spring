@@ -48,12 +48,12 @@ if (n <= 1) {
 
 // Таблица умножения
 
-/*function math() {
+function math() {
   while (1) {
     let x = Math.floor(Math.random(1) * 10);
     let y = Math.floor(Math.random(1) * 10);
     let res = +prompt(x + " x " + y + " =", "");
-    if (res == "" && res !== 0) {
+    if (res == "") {
       break;
     } else if (res == x * y) {
       alert("Правильно");
@@ -63,4 +63,4 @@ if (n <= 1) {
   }
 }
 
-math();*/
+math();
