@@ -1,0 +1,30 @@
+body {
+  height: 100vh;
+  background-color: rgb(177, 237, 241);
+  overflow-y: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.btn {
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgb(11, 187, 55);
+  border-radius: 5px;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
