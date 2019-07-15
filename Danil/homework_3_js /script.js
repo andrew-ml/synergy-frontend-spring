@@ -48,7 +48,7 @@ if (n <= 1) {
 
 // Таблица умножения
 
-function math() {
+/*function math() {
   while (1) {
     let x = Math.floor(Math.random(1) * 10);
     let y = Math.floor(Math.random(1) * 10);
@@ -63,4 +63,4 @@ function math() {
   }
 }
 
-math();
+math();*/
