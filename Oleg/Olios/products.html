@@ -6,7 +6,7 @@
     <meta name="description" content="HTML tutorial website" />
     <meta name="keywords" content="HTML,CSS,JavaScript" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style-products.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Olios: Products</title>
 </head>
 
@@ -18,16 +18,18 @@
             <li><a href="products.html"><img src="./img/basket.png" alt="icon basket"> </a> </li>
             <li><a href="search.html"><img src="./img/search.png" alt="icon search"> </a> </li>
         </ul>
-        <a href="#"><img src="./img/in.png" alt="icon arrow in" class="in"> </a>
+        <a href="categories.html"><img src="./img/in.png" alt="icon arrow in" class="in"> </a>
     </nav>
 
     <button class="burger-button">
         <a href="#" class="menu-btn">
             <span></span>
+            <span></span>
+            <span></span>
         </a>
     </button>
 
-    <main>
+    <main class="mainProducts">
         <section class="big-armchair">
             <div class="heart">
                 <span>495</span>
@@ -43,62 +45,65 @@
             </div>
         </section>
 
-        <section class="product">
-            <div class="products">
-                <span>Products</span>
-                <img src="./img/living.png" alt="icon living room">
-            </div>
-            <article>
-                <h1>White seat <span>- office</span></h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Ut fermentum interdum malesuada. Sed
-                    ornare
-                    posuere lobortis. </p>
-            </article>
-            <div class="cost">
-                <span>Cost</span>
-                <span>Quantity</span>
-            </div>
-            <div class="cost-add-card">
-                <span>$65</span>
-                <span>$90</span>
-                <input type="number" value="1">
-                <button>Add to card</button>
-            </div>
-        </section>
+        <div class="rightBlock">
+            <section class="product">
+                <div class="products">
+                    <span>Products</span>
+                    <img src="./img/living.png" alt="icon living room">
+                </div>
+                <article>
+                    <h1>White seat <span>- office</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Ut fermentum interdum malesuada. Sed
+                        ornare
+                        posuere lobortis. </p>
+                </article>
+                <div class="cost">
+                    <span>Cost</span>
+                    <span>Quantity</span>
+                </div>
+                <div class="cost-add-card">
+                    <span>$65</span>
+                    <span>$90</span>
+                    <input type="number" value="1">
+                    <button>Add to card</button>
+                </div>
+            </section>
 
-        <section class="furniture">
-            <div class="recomended">
-                <p>Recomended</p>
-            </div>
-            <div class="recomended-furniture">
-                <a href="#">
-                    <figure>
-                        <img src="./img/photo.png" alt="photo chair">
-                        <figcaption>
-                            <span>Dark seat</span>
-                            <p>Lorem ipsum dolor sit amet</p>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure>
-                        <img src="./img/photo_1.png" alt="photo chair">
-                        <figcaption>
-                            <span>Blue seat</span>
-                            <p>Lorem ipsum dolor sit amet</p>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure>
-                        <img src="./img/photo_2.png" alt="photo chair">
-                        <figcaption>
-                            <span>Red seat</span>
-                            <p>Lorem ipsum dolor sit amet</p>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-        </section>
+            <section class="furniture">
+                <div class="recomended">
+                    <p>Recomended</p>
+                </div>
+                <div class="recomended-furniture">
+                    <a href="#">
+                        <figure>
+                            <img src="./img/photo.png" alt="photo chair">
+                            <figcaption>
+                                <span>Dark seat</span>
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="./img/photo_1.png" alt="photo chair">
+                            <figcaption>
+                                <span>Blue seat</span>
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="./img/photo_2.png" alt="photo chair">
+                            <figcaption>
+                                <span>Red seat</span>
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </section>
+        </div>
+
     </main>
 </body>

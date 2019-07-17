@@ -1,6 +1,17 @@
 @import "normalize";
+@import "menu";
+@import "products";
+@import "search";
+@import "categories";
+
 html {
   min-height: 100%;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  background: url(../img/bg.jpg) 50% 100% no-repeat;
+  background-size: cover;
 }
 
 button {
@@ -9,6 +20,7 @@ button {
   padding: 0;
   cursor: pointer;
 }
+
  ul {
   list-style: none;
   margin: 0;
@@ -19,10 +31,8 @@ a {
   text-decoration: none;
 }
 
-body {
-  font-family: Lato, sans-serif;
-  background: url(../img/bg.jpg) 50% 100% no-repeat;
-  background-size: cover;
+figure {
+  margin: 0;
 }
 
 .navbar {
@@ -74,7 +84,7 @@ main {
     left: 290px;
   }
 
-  section {
+  .bigHeader {
     text-align: center;
     position: absolute;
     z-index: 2;
@@ -115,7 +125,7 @@ main {
  }
 }
 
-aside button {
+.burger-button {
   position: fixed;
   border-radius: 50%;
   right: 29px;
@@ -132,28 +142,23 @@ aside button {
   border-radius: 50%;
   position: relative;
 }
-.menu-btn span,
-.menu-btn span::before,
-.menu-btn span::after {
+
+.menu-btn span {
   position: absolute;
-  top: 50%; margin-top: -1px;
-  left: 49%; margin-left: -4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   width: 9px;
   height: 2px;
   background-color: #0000CD;
-}
-.menu-btn span::before,
-.menu-btn span::after {
-  content: '';
-  display: block;
-  transition: 0.2s;
-}
 
-.menu-btn span::before {
-  transform: translateY(-5px);
-}
-.menu-btn span::after {
-  transform: translateY(5px);
+  &:nth-child(2) {
+    margin-top: 5px;
+  }
+
+  &:last-child {
+    margin-top: -5px;
+  }
 }
 
 .nav-circle {
@@ -174,61 +179,4 @@ aside button {
       background-color: #0023ff;
     }
   }
-} 
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  position: fixed;
-  top: 48px;
-  right: 0;
-  bottom: 0;
-  width: 187px;
-  box-shadow: 0 0 12.5px 0 rgba(219, 219, 219, 0.5);
-  background-color: #ffffff;
-  overflow-x: hidden;
-  overflow-y: auto;
-
-  .menu-item {
-    flex: 1;
-    margin: 198px 0 20px;
-
-    li {
-      padding: 0 37px;
-      margin-bottom: 40.5px;
-
-      a {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-
-        span {
-          font-size: 9px;
-          letter-spacing: 0.2px;
-          color: #c1c1c1;
-          text-transform: uppercase;
-          margin-right: 20px;
-        }
-      }
-    }
-  }
-
-  p {
-    font-size: 9px;
-    text-transform: uppercase;
-    letter-spacing: 0.2px;
-    text-align: center;
-    color: #0023ff;
-    margin-bottom: 0px;
-  }
-
-  hr {
-    width: 78.5px;
-    height: 1px;
-    background-color: #0023ff;
-    border: none;
-    margin-bottom: 40px;
-  }
 }
-
