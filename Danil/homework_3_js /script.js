@@ -1,15 +1,15 @@
 // Сумма чисел
 
-/*let sum = null;
+let sum = null;
 
 for (i = 1; i <= 100; i++) {
   sum += i;
 }
-console.log(sum);*/
+console.log(sum);
 
 //Факториал
 
-/*let counter = prompt("Введите число!", "");
+let counter = prompt("Введите число!", "");
 counter = parseInt(counter);
 
 function factorial(x) {
@@ -19,11 +19,11 @@ function factorial(x) {
   return x * factorial(x - 1);
 }
 
-alert("Факториал числа: " + counter + "! = " + factorial(counter));*/
+alert("Факториал числа: " + counter + "! = " + factorial(counter));
 
 // Степень
 
-/* function degree(number, n) {
+function degree(number, n) {
   let result = number;
 
   for (var i = 1; i < n; i++) {
@@ -43,12 +43,12 @@ if (n <= 1) {
 } else if (!Number(number) || !Number(n)) {
   alert("Вы ввели не число!", "");
 } else {
-  alert(number + " в степени " + n + " = " + degree(number, n)); 
-}*/
+  alert(number + " в степени " + n + " = " + degree(number, n));
+}
 
 // Таблица умножения
 
-/*function math() {
+function math() {
   while (1) {
     let x = Math.floor(Math.random(1) * 10);
     let y = Math.floor(Math.random(1) * 10);
@@ -63,4 +63,4 @@ if (n <= 1) {
   }
 }
 
-math();*/
+math();
