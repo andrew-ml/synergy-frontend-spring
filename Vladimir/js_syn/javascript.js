@@ -53,3 +53,15 @@ function task_41() {
 
   outputInterval("Hello", time);
 }
+
+function task_51() {
+  function run(callback) {
+    setTimeout(function() {
+      callback();
+    }, 2000);
+  }
+
+  run(function() {
+    console.log("Hello");
+  });
+}
