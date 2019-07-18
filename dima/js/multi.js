@@ -1,11 +1,13 @@
 function multiplicationTable() {
 
-  let x = Math.floor(Math.random() * 10);
-  let y = Math.floor(Math.random() * 10);
-  let answer = x * y;
-  let result;
+
 
   for (let i = 0;; i++) {
+    let x = Math.floor(Math.random() * 10);
+    let y = Math.floor(Math.random() * 10);
+    let answer = x * y;
+    let result;
+
     result = prompt(x + " x " + y + " = ");
     if (result === "" || result === null) {
       break;
@@ -21,9 +23,6 @@ function multiplicationTable() {
       alert("incorrect");
     }
 
-    x = Math.floor(Math.random() * 10);
-    y = Math.floor(Math.random() * 10);
-    answer = x * y;
   }
 }
 

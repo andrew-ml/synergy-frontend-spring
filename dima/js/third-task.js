@@ -23,18 +23,7 @@ function sumOfAllElements() {
 let sumOfAllElementsBtn = document.getElementsByClassName('number-for-sum-btn');
 sumOfAllElementsBtn[0].addEventListener("click", sumOfAllElements);
 
-
-
-
-
-
-
-
-
-
-
-
-
+////////////////
 
 function factorial() {
 
@@ -59,19 +48,7 @@ function factorial() {
 let factorialBtn = document.getElementsByClassName('factorial-btn');
 factorialBtn[0].addEventListener('click', factorial);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/////////////
 
 function numToPower() {
   let num = prompt("Enter the number for raise to power");
