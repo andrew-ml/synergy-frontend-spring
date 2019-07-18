@@ -1,3 +1,5 @@
+///вывести четные значения из диапазона
+
 function evensFromRange(a, b) {
   for (a; a <= b; a++) {
     if (a === b + 1) {
@@ -11,6 +13,8 @@ function evensFromRange(a, b) {
 }
 
 // evensFromRange(9, 401);
+
+//среднее арифметическое цифр из двух чисел
 
 function averageOfNumeral() {
   let firstNumber = prompt("Enter the first number");
@@ -77,7 +81,7 @@ function averageOfNumeral() {
 //   }
 // }
 
-// showFiveMessage("Hello");
+///вывести сообщение через определенное кол-во секунд
 
 function showMessage(str) {
   let time = prompt("Через какое кол-во секунд вывести сообщение?");
@@ -93,6 +97,8 @@ function showMessage(str) {
 
 // showMessage("Hi!");
 
+/// запустить через две секунды
+
 function runAfterThoSeconds(callback) {
   setTimeout(callback, 2000);
 }
@@ -106,23 +112,7 @@ function mySetTimeout(callback, time) {
   console.log(callback);
 }
 
-// mySetTimeout(function () {
-//   console.log("Hello")
-// }, 1000);
-
-// let counter = 0;
-
-// for (let i = 0; i < 5; i++) {
-
-//   setInterval(function () {
-//     console.log("hello");
-//     counter++;
-//   }, 1000);
-
-//   if (counter === 5) {
-//     clearInterval(clear);
-//   }
-// }
+/// вывести 5 сообщений по таймеру
 
 let counter = 0;
 let timer;
@@ -138,4 +128,4 @@ function showFiveMessages() {
   timer = setTimeout(showFiveMessages, 1000);
 }
 
-showFiveMessages();
+// showFiveMessages();
