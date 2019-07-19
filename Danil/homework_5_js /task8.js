@@ -1,20 +1,19 @@
 let bank = 10000;
 let rate = 1;
-let options = ["Орел", "Решка"];
 
 for (i = 0; i <= 1000000; i++) {
-  let casino = Math.floor(Math.random() * options.length);
-  let person = Math.floor(Math.random() * options.length);
-  if (bank == 0) {
-    alert(`Вы проиграли, попытка: ${i}, размер последней ставки: ${rate}`);
-  } else if (person === casino) {
+  bank - rate;
+  let hit = Math.floor(Math.random() * 2);
+  if (bank <= 0) {
+    alert(`Вы проиграли, попытка: ${i}, размер последней ставки: ${rate}$`);
+    break;
+  } else if (hit === 1) {
     bank += rate * 2;
-    bank - rate;
-  } else if (person !== casino) {
+    rate = 1;
+  } else if (hit === 0) {
     bank -= rate;
     rate *= 2;
-    bank - rate;
-  } else {
-    alert(`Вы победили, ваш банк: ${bank}`);
+  } else if (i == 0 && bank > 0) {
+    alert(`Вы победили, ваш банк: ${bank}$`);
   }
 }
