@@ -1,0 +1,105 @@
+$margin: 25px;
+
+.card-title {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.card {
+  box-sizing: border-box;
+  padding: 10px 0px 20px 20px;
+
+  img {
+    margin-left: 50px;
+  }
+}
+
+.card-text {
+  font-size: 10px;
+  color: #a8a8a8;
+}
+.card-body {
+
+  span {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    color: #0023ff;
+  }
+}
+
+.mainCategories {
+  background-color: #f0f0f0;
+  width:1000px;
+  margin: auto;
+  padding-bottom: 10px;
+
+  .produ {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 50px 0;
+
+    span {
+      font-size: 36px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  }
+
+  .show {
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0023ff;
+    letter-spacing: 1px;
+    margin-top: 90px;
+  }
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+
+  & :nth-child(1), :nth-child(4), :nth-child(6) {
+    margin-right: $margin;
+  }
+
+  & :nth-child(n+4) {
+    margin-top: $margin;
+  }
+
+  .card, .card-body {
+    background-color: #fff;
+  }
+}
+
+.wtable {
+  
+  .card-title {
+    font-size: 26px;
+  }
+
+  .card-text {
+    font-size: 16px;
+  }
+
+  span {
+    font-size: 18px;
+  }
+}
+
+.table {
+  padding-top: 45px;
+}
+
+.bed {
+  padding-top: 70px;
+  padding-left: 0px;
+}
+
+.modernbed {
+  padding-top: 45px;
+}

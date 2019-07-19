@@ -1,0 +1,36 @@
+.wrapper, .wrapper1, .con {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.d1 {
+  background: #e27e3a;
+}
+
+.d2 {
+  background: #edb681;
+}
+
+.d3 {
+  background: #935222;
+}
+
+.d1, .d2, .d3, .cube {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  height: 50px;
+  width: 9%;
+}
+
+.wrapper1 :nth-child(3n+1) {
+  background: #e27e3a;
+}
+
+.wrapper1 :nth-child(3n+2) {
+  background: #edb681;
+}
+
+.wrapper1 :nth-child(3n+3) {
+  background: #935222;
+}

@@ -1,0 +1,127 @@
+.container {
+        width: 895px;
+        height: 473px;
+        background-color: #eceff5;
+        margin: 150px 0 0 250px;
+}
+
+.fake {
+        width: 894px;
+        height: 45px;
+        background-color: #405a93;
+}
+
+h1 {
+    width: 111.5px;
+    height: 25px;
+    font-family: HelveticaNeue;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    padding: 10px 391px 10px 391.5px;
+}
+
+.get {
+    width: 894.5px;
+    height: 43.5px;
+    background-color: #fefbe4;
+}
+
+p {
+    width: 245.5px;
+    height: 12.5px;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #405a93;
+    padding: 15.5px 324.5px 15.5px 324.5px;
+}
+
+.forma  {
+    padding: 20px 239.5px 282px 239px;
+}
+
+.login {
+    width: 416px;
+    height: 44px;
+}
+
+[placeholder] {
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #757575;
+    padding-left: 10px;
+}
+
+.password {
+    width: 416px;
+    height: 44px;
+}
+
+.submit {
+    width: 417px;
+    height: 36.5px;
+    border-radius: 5px;
+    background-color: #447add;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+hr {
+    width: 329px;
+    height: 1px;
+    background-color: #d2d5d9;
+    margin-top: 25px;
+}
+
+.submit1 {
+    width: 167px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: #49a02d;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    margin: 15px 0 0 125px;
+    padding-left: 18px;
+}
+
+.forgot {
+    width: 184px;
+    height: 11.5px;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #757575;
+    margin-left: -208px;
+}

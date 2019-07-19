@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple HTML page</title>
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .con {
+      margin-top: 30px;
+    }
+
+    img {
+      width: calc(33% - 15px);
+      height: 200px;
+      margin-left: 30px;
+    }
+
+    .img1 {
+      margin-left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="task">
+    <p>
+      Задание: сделать фотогаллерею во всю ширину страницы с помощью
+      flexbox.<br />
+      Стили записывать в этом же файле в теге "style" <br />
+      Расстояние между элементами по 30px. Пример:
+    </p>
+    <img src="tasks-img/01.png" width="500" alt="" />
+  </div>
+
+  <div class="container">
+    <img src="https://source.unsplash.com/random/800x800" alt="" class="img1" />
+    <img src="https://source.unsplash.com/random/800x800" alt="" />
+    <img src="https://source.unsplash.com/random/800x800" alt="" />
+  </div>
+  <div class="container con">
+    <img src="https://source.unsplash.com/random/800x800" alt="" class="img1" />
+    <img src="https://source.unsplash.com/random/800x800" alt="" />
+    <img src="https://source.unsplash.com/random/800x800" alt="" />
+  </div>
+  <div class="container con">
+    <img src="https://source.unsplash.com/random/800x800" alt="" class="img1" />
+    <img src="https://source.unsplash.com/random/800x800" alt="" />
+    <img src="https://source.unsplash.com/random/800x800" alt="" />
+  </div>
+</body>
+
+</html>

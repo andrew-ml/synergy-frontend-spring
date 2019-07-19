@@ -1,0 +1,241 @@
+@import "normalize";
+
+$boder:1px solid rgba(192, 192, 192, 0.5);
+$box-shadow:0 2px 4px rgba(0, 0, 0, 0.3);
+
+body {
+  width: 100%;
+}
+
+.loading {
+  position: relative;
+  top: 50px;
+  left: calc(50% - 205px);
+  width: 410px;
+  height: 105px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  border: $boder;
+  box-shadow: $box-shadow;
+  margin-bottom: 100px;
+
+  p {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+
+  .white {
+    width: 360px;
+    height: 30px;
+    margin-left: 26px;
+    background: white;
+    border: $boder;
+  }
+
+  .green {
+    position: absolute;
+    top: 57px;
+    width: 360px;
+    height: 30px;
+    margin-left: 26px;
+    background: green;
+    animation-name: animation1;
+    animation-duration: 3s;
+  }
+
+  @keyframes animation1 {
+    from {
+      width:0px;
+    }
+
+    to {
+      width: 360px;
+    }
+  }
+}
+
+.task2, .task4 {
+  position: relative;
+  top: 50px;
+  left: calc(50% - 205px);
+  width: 410px;
+  height: 410px;
+  background: #f1f1f1;
+  border: $boder;
+  box-shadow: $box-shadow;
+
+
+  .cub3 {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width:100px;
+    height: 100px;
+    background: #f1f1f1;
+    animation-name: cub3;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+    &:hover {
+      animation-play-state: paused;
+  }
+    }
+
+  .cub {
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: #4980bd;
+  }
+
+  @keyframes cub3 {
+    0% {
+      top: 0;
+      left:0;
+    }
+    25%{
+      top: 0;
+      left:calc(100% - 100px);
+      transform: rotate(90deg);
+    }
+    50%{
+      top: calc(100% - 100px);
+      left: calc(100% - 100px);
+      transform: rotate(180deg);
+    }
+    75%{
+      top: calc(100% - 100px);
+      left:0;
+      transform: rotate(270deg);
+    }
+    100% {
+      top: 0;
+      left:0;
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.mod {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  animation-name: modal;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-fill-mode: forwards;
+
+  @keyframes modal {
+      to {
+      left: 0;
+    }
+  } 
+
+  .modal {
+    width: 330px;
+    height: 200px;
+    background: #f1f1f1;
+    border: $boder;
+    box-shadow: $box-shadow;
+    padding: 40px;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+}
+  .task4 {
+    margin-top: 100px;
+    background: #FFF;
+
+    img {
+      display:  block;
+      margin: 100px auto;
+      transform: perspective(400px) scaleZ(1.5) translateZ(-50px);
+      animation-name: beating;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+
+      @keyframes beating {
+        0% {
+          transform: perspective(400px) scaleZ(1.5) translateZ(-50px);
+        }
+        10% {
+          transform: perspective(400px) scaleZ(0.7) translateZ(-50px);
+        }
+        20% {
+          transform: perspective(400px) scaleZ(1.5) translateZ(-50px);
+        }
+        30% {
+          transform: perspective(400px) scaleZ(0.7) translateZ(-50px);
+        }
+        40% {
+          transform: perspective(400px) scaleZ(1.5) translateZ(-50px);
+        }
+        50% {
+          transform: perspective(400px) scaleZ(1.5) translateZ(-50px);
+        }
+        60% {
+          transform: perspective(400px) scaleZ(0.7) translateZ(-50px);
+        }
+        70% {
+          transform: perspective(400px) scaleZ(1.5) translateZ(-50px);
+        }
+        80% {
+          transform: perspective(400px) scaleZ(0.7) translateZ(-50px);
+        }
+        90% {
+          transform: perspective(400px) scaleZ(1.5) translateZ(-50px);
+        }
+        100% {
+          transform: perspective(400px) scaleZ(1.5) translateZ(-50px);
+        }
+      }
+    }
+  }
+
+
+  .task5 {
+    margin: 130px auto;
+    width: 410px;
+    height: 410px;
+    border: $boder;
+    box-shadow: $box-shadow;
+    padding-top: 58px;
+    padding-left: 76px;
+    box-sizing: border-box;
+
+    .clock {
+      position: relative;
+      width: 258px;
+
+      .arrow {
+        position: absolute;
+        top: 27%;
+        left: 31%;
+        animation-name: arrow;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-play-state: paused;
+
+        &:hover {
+          animation-play-state: running;
+
+          @keyframes arrow {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+  }
+

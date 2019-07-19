@@ -1,0 +1,144 @@
+.container {
+    width: 895px;
+    height: 473px;
+    background-color: #eceff5;
+    margin: 150px 0 0 250px;
+}
+
+header {
+    width: 894px;
+    height: 44.5px;
+    background-color: #405a93;
+}
+
+h1 {
+width: 111.5px;
+height: 18.5px;
+font-family: HelveticaNeue, sans-serif;
+font-size: 25px;
+font-weight: bold;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+text-align: left;
+color: #ffffff;
+padding: 9.75px 391px 9.75px 391.5px;
+}
+
+.get {
+    width: 894.5px;
+    height: 43.5px;
+    background-color: #fefbe4;
+}
+
+.get p {
+    font-family: HelveticaNeue, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #405a93;
+    padding: 15px 347px 15px 302px;
+}
+
+.login {
+    width: 404px;
+    height: 40.5px;
+    border-radius: 5px;
+    border: solid 1px #d2d5d9;
+    background-color: #ffffff;
+    margin: 15.5px 239.5px 0px 239px;
+}
+
+.password {
+    width: 404px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px #d2d5d9;
+    background-color: #ffffff;
+    margin: 0px 239.5px 0px 239px;
+    border-top: 0;
+}
+
+[placeholder] {
+    font-family: HelveticaNeue, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #757575;
+    padding-left: 12.5px;
+}
+
+.submit {
+    width: 417px;
+    height: 36.5px;
+    border-radius: 5px;
+    background-color: #447add;
+    margin: 13px 240px 0 238px;
+    border: 0px;
+}
+
+[value^="Log"] {
+    font-family: HelveticaNeue, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    padding: 9.5px 188px 13px 188.5px;
+}
+
+hr {
+    width: 329px;
+    height: 1px;
+    background-color: #d2d5d9;
+    border: 0;
+    margin-top: 20.5px;
+}
+
+.submit1 {
+    width: 167px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: #49a02d;
+    margin: 12px 365px 0 363px;
+    border: 0;
+}
+
+[value^="Cre"] {
+    font-family: HelveticaNeue, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    padding:4px 0 0 -1px;
+}
+
+a p {
+    width: 184px;
+    height: 11.5px;
+    font-family: HelveticaNeue, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #99add1;
+    margin: 14.5px 356px 0 352px;
+}
