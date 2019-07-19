@@ -13,7 +13,7 @@ for (i = 0; i <= 1000000; i++) {
   } else if (hit === 0) {
     bank -= rate;
     rate *= 2;
-  } else if (i == 0 && bank > 0) {
+  } else {
     alert(`Вы победили, ваш банк: ${bank}$`);
   }
 }
