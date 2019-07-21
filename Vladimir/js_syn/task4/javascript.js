@@ -77,12 +77,12 @@ function task_51() {
 }
 
 function task_61() {
-  function hideSymbol(sym, text) {
+  function hideSymbol(symbol, text) {
     var output = "";
     for (var i = 0; i < text.length; i++) {
       var outputSign = text[i];
 
-      if (outputSign == "a") {
+      if (outputSign == symbol) {
         output += "*";
       } else {
         output += outputSign;
