@@ -82,7 +82,7 @@ function task_61() {
     for (var i = 0; i < text.length; i++) {
       var outputSign = text[i];
 
-      if (outputSign == symbol) {
+      if (outputSign === symbol) {
         output += "*";
       } else {
         output += outputSign;
@@ -103,30 +103,50 @@ function task_71() {
 }
 
 function task_81() {
-  alert("Slogna");
+  alert("Сложна и нипонятно!");
 }
 
 function task_91() {
   let money = 10000;
-  let bet = 1;
+  var bet = 1;
+  let target = prompt(
+    "Введите сумму на которой планируете остановится? У вас сейчас: " + money
+  );
 
-  for (i = 0; i <= 1000000; i++) {
+  for (let i = 0; i < 20000; i++) {
     let number = Math.floor(Math.random() * 2);
-    money = money - bet;
-    console.log(number);
+    document.writeln(" Сума " + money + "$ Выпало число " + number + "<br />");
     if (money <= 0) {
       console.log(
-        "Вы проиграли, попытка:" + i + ", размер последней ставки:" + bet
+        "Вы проиграли! Попыток было: " + i + " сумма последней ставки:" + bet
       );
       break;
-    } else if (number == 0) {
-      money = money + bet * 2;
+    }
+    if (number === 0) {
+      // money = money + bet * 2;
+      // bet = 1;
+
+      if (bet != 1) {
+        bet = 1;
+        money = money + bet * 2;
+      } else {
+        money = money + bet * 2;
+      }
       bet = 1;
-    } else if (number == 1) {
+    }
+    if (number === 1) {
       money = money - bet;
       bet = bet * 2;
-    } else {
-      console.log("Вы победили, ваш банк:" + money);
+    }
+    if (money > target) {
+      console.log(
+        "Вы вышли в плюс! Спустя " +
+          i +
+          " попыток " +
+          ", ваш баланс состовляет " +
+          money
+      );
+      break;
     }
   }
 }
