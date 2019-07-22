@@ -124,13 +124,13 @@ function casinoCoin() {
   let tryC = 0;
   casino(rate, sumMoney, tryC);
   function casino(rate, sumMoney, tryC) {
-    while (tryC < 10000) {
+    while (tryC < 100000) {
       if (sumMoney <= 0) {
         break;
       } else {
-        let rand = Math.round(Math.random());
+        let rand = Math.round(Math.random() * 2);
         if (rand == 0) {
-          sumMoney += rate;
+          sumMoney += rate * 2;
           tryC++;
           rate = 1;
           casino(rate, sumMoney, tryC);
@@ -143,7 +143,7 @@ function casinoCoin() {
       }
     }
 
-    if (tryC != 10000) {
+    if (tryC != 100000) {
       alert(
         `You lose, try number:${tryC},last rate:${rate},sum money ${sumMoney}`
       );
