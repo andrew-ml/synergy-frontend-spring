@@ -1,3 +1,5 @@
+"use strict";
+
 ///вывести четные значения из диапазона
 
 function evensFromRange(a, b) {
@@ -62,7 +64,7 @@ function averageOfNumeral() {
     console.log("Сумма длин первого и второго числа " + lengthOfBothNumbers);
     console.log(
       "Среднее арифметическое цифр первого и второго числа =  " +
-        averageOfNumeralOfNumbers
+      averageOfNumeralOfNumbers
     );
   }
 }
@@ -90,14 +92,12 @@ function showMessage(str) {
 
   time = time + 100;
 
-  setTimeout(function() {
+  setTimeout(function () {
     console.log(str);
   }, time);
 }
 
 // showMessage("Hi!");
-
-/// запустить через две секунды
 
 function runAfterThoSeconds(callback) {
   setTimeout(callback, 2000);
@@ -112,7 +112,9 @@ function mySetTimeout(callback, time) {
   console.log(callback);
 }
 
-/// вывести 5 сообщений по таймеру
+// mySetTimeout(function() {
+//   console.log("Hi");
+// }, 2000);
 
 let counter = 0;
 let timer;
@@ -129,3 +131,35 @@ function showFiveMessages() {
 }
 
 // showFiveMessages();
+
+function customSetTimeout() {
+  console.log("Hi!");
+  setTimeout(customSetTimeout, 1000);
+}
+
+// customSetTimeout();
+
+// let person = {
+//   name: "John",
+//   surname: "Watson",
+//   age: 25,
+//   family: {
+//     father: "Igor",
+//     mother: "Maria"
+//   }
+// };
+
+// function clone(emptyObj, fullObj) {
+//   let result = {};
+
+//   for (let key in fullObj) {
+//     result[key] = fullObj[key];
+//     if (typeof key === "object") {
+//       clone(emptyObj, fullObj);
+//     }
+//   }
+
+//   return result;
+// }
+
+// clone(otherPerson, person);
