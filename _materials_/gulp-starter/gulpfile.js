@@ -1,84 +1,19 @@
-<<<<<<< Updated upstream
-/***** 
-*
-* Install first this modules as devDependencies
-* 
-*  npm install browser-sync gulp gulp-autoprefixer gulp-connect gulp-load-plugins gulp-sass --save-dev
-*  
-******/
-
-var gulp    = require('gulp'),
-    $       = require('gulp-load-plugins')(),
-    connect = require('gulp-connect'),
-    browserSync = require('browser-sync').create();
-
-var sassPaths = [
-  'src/sass'
-];
-
-gulp.task('webserver', function() {
-=======
 var gulp = require("gulp");
 var $ = require("gulp-load-plugins")();
 var connect = require("gulp-connect");
 var browserSync = require("browser-sync").create();
 var sassPaths = ["src/sass"];
-var svgSprite = require('gulp-svg-sprite');
-var rename = require("gulp-rename");
-var ejs = require("gulp-ejs");
 
-gulp.task("webserver", function () {
->>>>>>> Stashed changes
+gulp.task("webserver", function() {
   connect.server({
     livereload: true,
     port: 3002,
-    host: '0.0.0.0'
+    host: "0.0.0.0"
   });
 });
 
 // Static server
-<<<<<<< Updated upstream
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        }
-    });
-});
-
-gulp.task('html', function () {
-  gulp.src('*.html')
-    .pipe(connect.reload());
-});
-
-gulp.task('js', function () {
-  gulp.src('*.js')
-    .pipe(connect.reload());
-});
-
-gulp.task('sass', function() {
-  return gulp.src('src/sass/style.scss')
-    .pipe($.sass({
-      includePaths: sassPaths
-    })
-      .on('error', $.sass.logError))
-    .pipe($.autoprefixer({
-      browsers: ['last 2 versions', 'ie >= 9']
-    }))
-    .pipe(gulp.dest('./css'))
-    .pipe(connect.reload());
-});
-
-gulp.task('watch', ['sass','html', 'js'], function() {
-  gulp.watch(['*.html'], ['html']);
-  gulp.watch(['src/**/*.html'], ['html']);
-  gulp.watch(['src/sass/**/*.scss'], ['sass']);
-  gulp.watch(['src/js/**/*.js'], ['js']);
-});
-
-gulp.task('default', ['sass', 'webserver', 'watch']);
-=======
-gulp.task("browser-sync", function () {
+gulp.task("browser-sync", function() {
   browserSync.init({
     server: {
       baseDir: "./"
@@ -86,30 +21,15 @@ gulp.task("browser-sync", function () {
   });
 });
 
-gulp.task("html", function () {
+gulp.task("html", function() {
   gulp.src("*.html").pipe(connect.reload());
 });
 
-gulp.task("js", function () {
+gulp.task("js", function() {
   gulp.src("*.js").pipe(connect.reload());
 });
 
-gulp.task("sprite", function () {
-  gulp
-    .src("src/images/**/*.svg")
-    .pipe(
-      svgSprite({
-        mode: {
-          defs: {
-            example: true
-          }
-        }
-      })
-    )
-    .pipe(gulp.dest("svg-out"));
-});
-
-gulp.task("sass", function () {
+gulp.task("sass", function() {
   return gulp
     .src("src/sass/style.scss")
     .pipe(
@@ -126,27 +46,11 @@ gulp.task("sass", function () {
     .pipe(connect.reload());
 });
 
-gulp.task("watch", ["sass", "html", "js"], function () {
+gulp.task("watch", ["sass", "html", "js"], function() {
   gulp.watch(["*.html"], ["html"]);
   gulp.watch(["src/**/*.html"], ["html"]);
   gulp.watch(["src/sass/**/*.scss"], ["sass"]);
   gulp.watch(["src/js/**/*.js"], ["js"]);
-  gulp.watch(["templates/**/*.ejs"], ["templates"]);
-});
-
-gulp.task("templates", function () {
-  gulp
-    .src("./templates/*.ejs")
-    .pipe(
-      ejs({
-        msg: "Hello Gulp!"
-      })
-    )
-    .pipe(rename({
-      extname: ".html"
-    }))
-    .pipe(gulp.dest("./"));
 });
 
 gulp.task("default", ["sass", "webserver", "watch"]);
->>>>>>> Stashed changes

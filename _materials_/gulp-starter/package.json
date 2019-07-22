@@ -1,21 +1,9 @@
 {
   "name": "gulpsass",
   "version": "1.0.0",
-  "description": "HTML and SASS template",
-  "main": "index.js",
   "scripts": {
     "dev": "gulp default"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/markomitranic/ZentZent.git"
-  },
-  "author": "Marko Mitranic <marko.mitranic@gmail.com> (https://github.com/markomitranic)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/markomitranic/ZentZent/issues"
-  },
-  "homepage": "https://github.com/markomitranic/ZentZent#readme",
   "devDependencies": {
     "browser-sync": "^2.26.5",
     "del": "^2.2.2",
@@ -25,19 +13,17 @@
     "gulp-clean-css": "^2.0.13",
     "gulp-concat": "^2.6.0",
     "gulp-connect": "^5.7.0",
+    "gulp-ejs": "^4.1.1",
     "gulp-html-replace": "^1.6.1",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.0.3",
     "gulp-load-plugins": "^1.6.0",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.1.1",
+    "gulp-svg-sprite": "^1.5.0",
     "gulp-uglify": "^2.0.0",
     "run-sequence": "^1.2.2"
-<<<<<<< Updated upstream
-  }
-}
-=======
   },
   "dependencies": {}
 }
->>>>>>> Stashed changes
