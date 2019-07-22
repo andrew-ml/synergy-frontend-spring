@@ -110,6 +110,7 @@ function task_91() {
   );
 
   for (let i = 0; i < 20000; i++) {
+	money = money - bet;
     let number = Math.floor(Math.random() * 2);
     document.writeln(" Сума " + money + "$ Выпало число " + number + "<br />");
     if (money <= 0) {
@@ -131,7 +132,7 @@ function task_91() {
       bet = 1;
     }
     if (number === 1) {
-      money = money - bet;
+
       bet = bet * 2;
     }
     if (money > target) {
