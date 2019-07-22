@@ -50,10 +50,6 @@ function task_31() {
 }
 
 function task_41() {
-  console.log("Вариант 1:");
-  let a = "aabs saa12aa23fdaa";
-  console.log((a.match(new RegExp("aa", "g")) || []).length);
-  console.log("Вариант 2:");
   let str = "aabs saa12aa23fdaa",
     count = 0;
   let pos = str.indexOf("aa");
