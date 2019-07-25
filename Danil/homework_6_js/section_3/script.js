@@ -4,7 +4,7 @@ for (i = 0; i <= 999999; i++) {
   arr[i] = "abc";
 }
 
-let timeIntial = performance.now();
+var timeIntial = performance.now();
 
 arr.push("abc");
 
@@ -13,6 +13,8 @@ let timePush = performance.now() - timeIntial;
 console.log(
   `Время выполнения метода push = ${timePush.toFixed(4)} миллисекунд`
 );
+
+var timeIntial = performance.now();
 
 arr.unshift("abc");
 
@@ -23,7 +25,7 @@ console.log(
 );
 
 console.log(
-  `Метод push быстрее метода unshift в ${(timePush / timeUnshift).toFixed(
+  `Метод push быстрее метода unshift в ${(timeUnshift / timePush).toFixed(
     4
   )} раз`
 );
