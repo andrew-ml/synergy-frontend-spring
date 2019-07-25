@@ -79,27 +79,28 @@ let actors = [
 ];
 
 // 1
-// function addProperty(actors) {
-//   for (i = 0; i <= actors.length; i++) {
-//     if (actors[i].oscars > 0) {
-//       actors[i].achievement = "hasOscar";
-//     }
-//   }
-// }
 
-// console.log(addProperty(actors));
+function addProperty(actors) {
+  for (i = 0; i < actors.length; i++) {
+    if (actors[i].oscars > 0) {
+      actors[i].hasOscar = true;
+    } else actors[i].hasOscar = false;
+  }
+}
+addProperty(actors);
+
+console.log(actors);
 
 //2
 
-// function countWomen(women) {
-//   let counter = 0;
-//   if (women.gender == "female") {
-//     counter++;
-//   }
-//   return counter;
-// }
+function countWomen(even, women) {
+  if (women.gender === "female") {
+    return even + 1;
+  }
+  return even;
+}
 
-// console.log(`Актрис: ${actors.reduce(countWomen)}`);
+console.log(`Актрис: ${actors.reduce(countWomen, 0)}`);
 
 //3
 
