@@ -144,7 +144,7 @@ console.log(actors);
 //7
 
 actors.sort(function(a, b) {
-  return a.yearBorn > b.yearBorn ? 1 : -1;
+  return a.yearBorn - b.yearBorn;
 });
 
 console.log(actors);
