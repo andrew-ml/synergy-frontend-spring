@@ -6,7 +6,7 @@ section {
   transition: max-height 0.5s;
   border-radius: 0 0 4px 4px;
   text-align: center;
-  background: aquamarine;
+  background: rgb(238, 238, 238);
 }
 section.active {
   max-height: 200px;
@@ -16,10 +16,10 @@ section.active {
   display: flex;
   flex-direction: column;
   button {
-    margin-bottom: 2px;
+    margin-top: 2px;
     width: 300px;
     height: 30px;
-    background: blueviolet;
+    background: rgb(119, 178, 255);
     border-radius: 4px 4px 0 0;
     color: white;
     border: none;
