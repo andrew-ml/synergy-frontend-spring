@@ -8,7 +8,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
 }
 
 .btn {
@@ -27,4 +26,38 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.dropdown-list {
+  list-style: none;
+  display: none;
+}
+
+.dropdown-list.active {
+  display: block;
+}
+
+.active {
+  display: block;
+}
+
+.passive {
+  display: none;
+}
+
+.page {
+  display: none;
+  margin-top: 100px;
+}
+
+.page-1 {
+  background: red;
+}
+
+.page-2 {
+  background: green;
+}
+
+.page-3 {
+  background: blue;
 }

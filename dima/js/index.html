@@ -1,34 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>JS lesson</title>
 
-    <!-- <script src="first-task.js"></script> -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>JS lesson</title>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <!-- <script src="first-task.js"></script> -->
 
-  <body>
-    <div class="container">
-      <div class="btn multi-btn">
-        Multiplication table
-      </div>
-      <div class="btn calculator-btn">Simply calculator</div>
-      <div class="btn num-to-power-btn">Power of number</div>
-      <div class="btn number-for-sum-btn">Sum from 1 to num</div>
-      <div class="btn factorial-btn">Factorial</div>
+  <link rel="stylesheet" href="css/dom.css" />
+</head>
+
+<body>
+  <!-- <div class="container">
+    <div class="btn multi-btn">
+      Multiplication table
     </div>
-    <script src="multi.js"></script>
-    <script src="calculator.js"></script>
-    <script src="third-task.js"></script>
-    <script src="async.js"></script>
-    <script src="functions.js"></script>
-    <script src="homework-5.js"></script>
-    <script src="lecture20.js"></script>
-    <script src="homework-6.js"></script>
-    <script src="actors-task.js"></script>
-  </body>
+    <div class="btn calculator-btn">Simply calculator</div>
+    <div class="btn num-to-power-btn">Power of number</div>
+    <div class="btn number-for-sum-btn">Sum from 1 to num</div>
+    <div class="btn factorial-btn">Factorial</div>
+  </div> -->
+
+  <div class="modal-window">
+    <div class="modal-window-content">
+      <h2 class="modal-title">Вы открыли модальное окно</h2>
+      <p class="modal-description">Если Вы хотите закрыть это окно, нажмите "Ок"</p>
+      <div class="closed-modal-btn">Ок</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <section data-select-part="part-1" class="first-section">Section 1</section>
+    <div data-content-id="part-1" class="content"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Praesentium, velit.
+    </div>
+    <section data-select-part="part-2">Section 2</section>
+    <div data-content-id="part-2" class="content"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Praesentium, velit.
+    </div>
+    <section data-select-part="part-3">Section 3</section>
+    <div data-content-id="part-3" class="content"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Praesentium, velit.
+    </div>
+    <section data-select-part="part-4">Section 4</section>
+    <div data-content-id="part-4" class="content"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Praesentium, velit.
+    </div>
+  </div>
+
+  <div class="container">
+    <button class="modal-window-btn">
+      show modal window
+    </button>
+  </div>
+
+  <script src="homeworks/dom-homework.js"></script>
+  <script src="homeworks/closure.js"></script>
+  <!-- <script src="homeworks/actors-task.js"></script> -->
+</body>
+
 </html>

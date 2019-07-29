@@ -210,3 +210,36 @@ function showWomensWithOscar(arr) {
   }
 
 }
+
+function addAge(arr) {
+
+  for (let i = 0; i < arr.length; i++) {
+    arr[i].age = 2019 - arr[i].yearBorn;
+  }
+
+}
+
+addAge(actors);
+
+///named arguments
+
+function filterActors(options) {
+
+  let age = options.age;
+  let minOskar = options.minOskar;
+  let gender = options.gender;
+
+
+  let filteredArr = actors.filter(function (actor) {
+    return age < actor.age && minOskar < actor.oscars && gender === actor.gender;
+  })
+
+  console.log(filteredArr);
+
+}
+
+filterActors({
+  age: 60,
+  minOskar: 1,
+  gender: "male"
+});
