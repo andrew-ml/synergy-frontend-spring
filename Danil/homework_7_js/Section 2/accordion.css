@@ -1,0 +1,53 @@
+.accordionn {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+    margin-top: 5px;
+}
+
+#title_1 {
+    background: #2d4f44;
+}
+
+#title_2 {
+    background: #2d494f;
+}
+
+#title_3 {
+    background: #2d404f;
+}
+
+#title_4 {
+    background: #2d354f;
+}
+
+.accordionn-title {
+    height: 50px;
+    border-bottom: 0.5px solid #fff;
+    border-top: 0.5px solid #fff;
+    cursor: pointer;
+}
+
+.accordionn-title span {
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+    font-size: 25px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.accordionn-title span:hover {
+    font-size: 27px;
+}
+
+.accordionn-cont {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.accordionn-title .active+.accordionn-cont {
+    max-height: 100%;
+}

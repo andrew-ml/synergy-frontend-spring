@@ -4,7 +4,7 @@ for (i = 0; i <= 999999; i++) {
   arr[i] = "abc";
 }
 
-var timeIntial = performance.now();
+let timeIntial = performance.now();
 
 arr.push("abc");
 
@@ -14,7 +14,7 @@ console.log(
   `Время выполнения метода push = ${timePush.toFixed(4)} миллисекунд`
 );
 
-var timeIntial = performance.now();
+timeIntial = performance.now();
 
 arr.unshift("abc");
 
