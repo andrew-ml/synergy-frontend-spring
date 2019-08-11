@@ -45,9 +45,9 @@
 .accordionn-cont {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s;
+    transition: max-height 0.3s;
 }
 
-.accordionn-title .active+.accordionn-cont {
-    max-height: 100%;
+.accordionn-title.active+.accordionn-cont {
+    max-height: 200px;
 }
