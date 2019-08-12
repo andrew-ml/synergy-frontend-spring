@@ -26,7 +26,6 @@ class App extends React.Component {
         `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
       );
       const DATA = await API_URL.json();
-      console.log(DATA);
 
       let sunset = DATA.sys.sunset;
       let date_1 = new Date();
@@ -66,19 +65,27 @@ class App extends React.Component {
   };
   render() {
     return (
-      <div>
-        <Info />
-        <Form weatherMethod={this.gettingWeather} />
-        <Weather
-          temp={this.state.temp}
-          weather={this.state.weather}
-          city={this.state.city}
-          country={this.state.country}
-          pressure={this.state.pressure}
-          sunrise={this.state.sunrise}
-          sunset={this.state.sunset}
-          error={this.state.error}
-        />
+      <div className="wrapper">
+        <div className="info">
+          <Info />
+        </div>
+        <div className="form">
+          <div>
+            <Form weatherMethod={this.gettingWeather} />
+          </div>
+          <div>
+            <Weather
+              temp={this.state.temp}
+              weather={this.state.weather}
+              city={this.state.city}
+              country={this.state.country}
+              pressure={this.state.pressure}
+              sunrise={this.state.sunrise}
+              sunset={this.state.sunset}
+              error={this.state.error}
+            />
+          </div>
+        </div>
       </div>
     );
   }
