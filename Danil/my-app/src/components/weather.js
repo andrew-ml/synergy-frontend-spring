@@ -11,7 +11,7 @@ const Weather = props => (
         <p>Погода: {props.weather}</p>
         <p>Давление: {props.pressure} мм рт. ст.</p>
         <p>Восход солнца: {props.sunrise}</p>
-        {/* <p>Заход солнца: {props.sunset}</p> */}
+        <p>Заход солнца: {props.sunset}</p>
       </div>
     )}
     <p className="error">{props.error}</p>
