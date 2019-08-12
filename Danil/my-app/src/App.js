@@ -4,6 +4,7 @@ import Weather from "./components/Weather";
 import Form from "./components/Form";
 
 const API_KEY = "ba8a72959516691a1f82262980f28000";
+const lang = "ru";
 
 class App extends React.Component {
   state = {
@@ -23,7 +24,7 @@ class App extends React.Component {
 
     if (city) {
       const API_URL = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+        `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric&lang=${lang}`
       );
       const DATA = await API_URL.json();
 
