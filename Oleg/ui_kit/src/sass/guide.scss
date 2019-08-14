@@ -1,0 +1,100 @@
+.guide {
+  margin-top: $margin;
+  margin-bottom: $margin;
+
+  .gentleman {
+    background: url(../img/gentleman.jpg);
+    padding: 60px 0 60px 100px;
+    box-sizing: border-box;
+
+    .books {
+      
+      p {
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 0.3px;
+        color: #33363b;
+        text-transform: uppercase;
+        margin-top: 0;
+      }
+    }
+
+    hr {
+      height: 1px;
+      background-color: #ccd4dd;
+      width: 555px;
+      margin: 1px 0 1px 0;
+    }
+
+    h1 {
+      font-family: 'PT Serif', serif, sans-serif;
+      font-size: 50px;
+      font-weight: bold;
+      color: #33363b;
+      margin: 150px 0 160px
+    }
+
+    .gentlemanInfo {
+      margin-top: 10px;
+
+      span {
+        font-size: 14px;
+        letter-spacing: 0.35px;
+        color: #868d9b;
+        margin-right: 30px;
+
+        .orangeText {
+          color: #ffa24f;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .introduction {
+    background: $bgblock;
+    display: flex;
+    padding: 93px 112px 115px 98px;
+    box-sizing: border-box;
+
+    .numberPage {
+
+      .page {
+        font-family: 'PT Serif', sans-serif;
+        font-size: 100px;
+        font-weight: bold;
+        font-style: normal;
+        line-height: 0.72;
+        color: #edeff2;
+      }
+
+      .textRotate {
+        width: 90px;
+
+        hr {
+          width: 2px;
+          height:116px;
+          background-color: #33363b;
+        }
+
+        span {
+          display: block;
+          transform: rotate(270deg);
+          font-size: 16px;
+          font-weight: bold;
+          color: #33363b;
+          text-transform: uppercase;
+          margin-top: 80px;
+        }
+      }
+    }
+
+    article {
+      font-family: 'PT Serif', sans-serif;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #626a73;
+      margin-left: 105px;
+    }
+  }
+}

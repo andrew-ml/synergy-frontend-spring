@@ -1,0 +1,67 @@
+.great {
+  display: flex;
+  box-shadow: $shadowblock;
+  margin-bottom: $margin;
+  height: 608px;
+
+  .greatRight {
+    background: $bgblock;
+    padding: 60px;
+    text-align: center;
+
+    .the {
+      display: flex;
+      justify-content: space-between;
+      width: 125px;
+      margin: 0 auto;
+
+      hr {
+        width: 35px;
+        height: 1px;
+        background-color: #33363b;
+      }
+
+      span {
+        font-family: 'PTSerif', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: italic;
+        color: #33363b;
+      }
+    }
+
+    h2 {
+      font-size: 48px;
+      font-weight: bold;
+      color: #33363b;
+      margin: 15px 0 40px 0;
+    }
+
+    hr {
+      width: 60px;
+      height: 4px;
+      background-color: #33363b;
+    }
+
+    article {
+      font-family: PTSerif;
+      font-size: 18px;
+      line-height: 1.7;
+      letter-spacing: 0.9px;
+      color: #626a73;
+      margin: 35px 0 55px 0;
+    }
+
+    button {
+      width: 165px;
+      height: 50px;
+      border: solid 0.5px #99a3b4;
+      font-size: 14px;
+      font-weight: 500;
+      color: #33363b;
+      background-color: #ffffff;
+      text-transform: uppercase;
+      border-radius: 4px;
+    }
+  }
+}

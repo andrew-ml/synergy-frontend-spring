@@ -1,0 +1,30 @@
+.coffee {
+  display: flex;
+
+  .threeIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 97px;
+    height: 264px;
+    background: $bgblock;
+
+    .coffeeIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 97px;
+      height: 88px;
+
+      img {
+        margin-bottom: 10px;
+      }
+    }
+
+    .borderCoffeeIcon {
+      border-top: 1px solid #dde1e7;
+      border-bottom: 1px solid #dde1e7;
+    }
+  }
+}

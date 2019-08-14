@@ -1,0 +1,50 @@
+.greatWall {
+  width: 750px;
+  height: 265px;
+  background: $bgblock;
+  display: flex;
+  margin-right: $margin;
+
+  .userpost {
+    width: 390px;
+    padding: 30px;
+
+    h4 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #33363b;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    hr {
+      width: 40px;
+      height: 2px;
+      background-color: #ff7098;
+      margin: 20px 0px 20px 0px;
+    }
+
+    article {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.2px;
+      color: #868d9b;
+      margin-bottom: 25px;
+    }
+    .showUser {
+      display: flex;
+      justify-content: space-between;
+
+      .user {
+        display: flex;
+
+        span {
+        margin: 12px 0 0  10px;;
+        }
+      }
+      .like {
+        padding-top: 12px;
+      }
+    }
+  }
+}

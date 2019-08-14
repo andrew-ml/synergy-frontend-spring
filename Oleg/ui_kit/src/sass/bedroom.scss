@@ -1,0 +1,106 @@
+.bedroom {
+  width: 750px;
+  height: 486px;
+  box-shadow: $shadowblock;
+  background-color: $bgblock;
+  margin-top: $margin;
+
+  .imgBedroom {
+    position: relative;
+
+    .traingleAndStar {
+      position: absolute;
+      bottom: 192px;
+      width: 0;
+      height: 0;
+      border-top: 80px solid #ff638f; 
+      border-right: 80px solid transparent;
+    }
+
+    .whiteStar {
+      position: absolute;
+      left: 15px;
+      bottom: 235px;
+    }
+  }
+
+  .textBedroom {
+    padding: 25px 33px 0 30px;
+
+    .bedroomPrice {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+
+      p {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.45px;
+        color: #33363b;
+      }
+
+      span {
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.45px;
+        color: #65bd8c;
+      }
+    }
+
+    article {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.35px;
+      color: #868d9b;
+    }
+
+    .buyers {
+      display: flex;
+      align-items: center;
+      margin-top: 25px;
+
+      .iconBuyers {
+
+        img {
+          margin-right: 10px;
+
+          &:first-child {
+            width: 32px;
+          }
+        }
+      }
+
+      .quantityBuyers {
+        width: 60px;
+        height: 32px;
+        border: solid 0.5px #bcc4ce;
+        border-radius:15px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        margin-right: 10px;
+      }
+    }
+
+    span {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.35px;
+      color: #868d9b;
+    }
+
+    button {
+      width: 138px;
+      height: 50px;
+      border-radius: 4px;
+      background-color: #ff638f;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.35px;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-left: 247px;
+    }
+  }
+}

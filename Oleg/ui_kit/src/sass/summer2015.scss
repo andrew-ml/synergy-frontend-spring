@@ -1,0 +1,37 @@
+.summer2015 {
+  display: flex;
+  align-items: center;
+  width: 555px;
+  height: 360px;
+  box-shadow: $shadowblock;
+  background-color: $bgblock;
+  margin-right: $margin;
+
+  .fashion {
+
+    span {
+      font-size: 14px;
+      letter-spacing: 0.7px;
+      color: #868d9b;
+    }
+
+    h2 {
+      font-family: 'PT Serif', sans-serif;
+      font-size: 48px;
+      font-style: italic;
+      color: #33363b;
+      font-weight: 500;
+      margin: 9px 0 30px 0;
+    }
+
+    .textAndArrow {
+      display: flex;
+
+      span {
+        font-size: 14px;
+        font-weight: 500;
+        color: #33363b;
+      }
+    }
+  }
+}

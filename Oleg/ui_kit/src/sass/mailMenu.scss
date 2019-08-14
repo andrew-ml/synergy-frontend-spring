@@ -1,0 +1,148 @@
+.mailMenu {
+  width: 360px;
+  height: 563px;
+  margin-left: $margin;
+  box-shadow: $shadowblock;
+  background-color: $bgblock;
+  
+  .firstCell {
+    background-color: #5cbcff;
+
+    .cellName {
+
+      .mailStyle {
+        font-size: 14px;
+        letter-spacing: 0.35px;
+        color: #ffffff;
+        margin-right: 10px;
+      }
+  
+      hr {
+        width: 8px;
+        height: 2px;
+        background-color: #ffffff;
+      }
+    }
+
+  }
+
+  .menuCell {
+    height: 75px;
+    display: flex;
+    border-bottom: 1px solid #dde1e7;
+    padding: 0 30px 0 33px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    cursor: pointer;
+
+    .cellName {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 20px;
+      }
+
+      span {
+        font-size: 14px;
+        letter-spacing: 0.35px;
+        color: #868d9b;
+      }
+
+      hr {
+        transform: rotate(45deg);
+      }
+
+      .hrRight {
+        transform: rotate(135deg);
+        margin-left: -2px;
+      }
+    }
+
+    .howNumber {
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        color: #3b3e43;
+      }
+
+      .blueBlockNumber {
+        display: inline-block;
+        width: 45px;
+        height: 22px;
+        background: #5cbcff;
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        color: #ffffff;
+        padding: 5px 0 0 8px;
+        box-sizing: border-box;
+      }
+
+      img {
+        cursor: pointer;
+      }
+    }
+
+    .howNumber1 {
+      margin-right: 8px;
+    }
+  }
+
+  .tags {
+    height: 105px;
+    display: flex;
+    align-items: center;
+    padding-left: 33px; 
+
+    span {
+      font-size: 12px;
+      letter-spacing: 0.3px;
+      color: #868d9b;
+      display: inline-block;
+      height: 14px;
+      margin-right: 10px;
+    }
+
+    .circles {
+
+      span {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #7ece8d;
+        margin-right: 15px;
+        cursor: pointer;
+
+        &:nth-child(2) {
+          background: #ffd75d;
+        }
+
+        &:nth-child(3) {
+          background: #ff7777;
+        }
+
+        &:last-child {
+          background: #8c91ff;
+        }
+      }
+    }
+  }
+
+  button {
+    display: block;
+    margin: auto;
+    width: 298px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #5cbcff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.35px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
