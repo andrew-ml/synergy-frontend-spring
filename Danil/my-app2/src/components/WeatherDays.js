@@ -4,6 +4,8 @@ const API_KEY = "ba8a72959516691a1f82262980f28000";
 const lang = "ru";
 
 class WeatherDays extends React.Component {
+  state = { days: [] };
+
   gettingWeatherDays = async e => {
     e.preventDefault();
     const city = e.target.elements.city.value;

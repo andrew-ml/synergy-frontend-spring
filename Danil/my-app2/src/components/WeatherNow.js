@@ -53,7 +53,7 @@ class WeatherNow extends React.Component {
         humidity: undefined,
         wind: undefined,
         clouds: undefined,
-        error: "Введите название города!"
+        error: "Введите название города"
       });
     }
   };
