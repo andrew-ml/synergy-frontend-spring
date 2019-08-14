@@ -1,14 +1,13 @@
 import React from "react";
 
 const Form = props => (
-  <form onSubmit={props.weatherMethod} onSubmit={props.weatherMethodDays}>
-    <div className="form_atributs">
-      <p className="title_form">Узнайте погоду в вашем городе!</p>
+  <form onSubmit={props.weatherMethod}>
+    <div className="form">
       <div className="input">
         <input type="text" name="city" placeholder="Город" />
       </div>
       <div>
-        <button className="button">Получить погоду</button>
+        <button className="button">Поиск</button>
       </div>
     </div>
   </form>
