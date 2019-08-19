@@ -1,6 +1,7 @@
 import React from "react";
-import WeatherDays from "./components/WeatherDays";
+import DailyWeather from "./components/DailyWeather";
 import WeatherNow from "./components/WeatherNow";
+import WeatherHour from "./components/WeatherHour";
 
 class App extends React.Component {
   render() {
@@ -8,12 +9,13 @@ class App extends React.Component {
       <div className="wrapper">
         <div className="conteiner">
           <div>
-            <div>
-              <WeatherNow />
-            </div>
-            <div>
-              <WeatherDays />
-            </div>
+            <WeatherNow />
+          </div>
+          <div>
+            <WeatherHour />
+          </div>
+          <div>
+            <DailyWeather />
           </div>
         </div>
       </div>

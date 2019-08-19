@@ -3,7 +3,7 @@ import React from "react";
 const API_KEY = "ba8a72959516691a1f82262980f28000";
 const lang = "ru";
 
-class WeatherDays extends React.Component {
+class DailyWeather extends React.Component {
   state = { days: [] };
 
   gettingWeatherDays = async e => {
@@ -18,7 +18,7 @@ class WeatherDays extends React.Component {
       const DATA_DAYS = await API_URL_DAYS.json();
       console.log(DATA_DAYS);
 
-      DATA_DAYS.list.map(function(elem, i) {
+      const daysList = DATA_DAYS.list.map(function(elem, i) {
         let weather = elem.list[i].weather[0].description;
         let weatherInfo = weather[0].toUpperCase() + weather.slice(1);
 
@@ -38,4 +38,4 @@ class WeatherDays extends React.Component {
   }
 }
 
-export default WeatherDays;
+export default DailyWeather;
