@@ -1,0 +1,110 @@
+header {
+  margin: 0 auto;
+  .title-name {
+    font-family: "Cormorant Infant";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.18px;
+    text-align: center;
+    color: #262626;
+  }
+  .title-about {
+    margin-top: -11px;
+    margin-bottom: 46px;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 1.5;
+    letter-spacing: 0.08px;
+    text-align: center;
+    color: #595959;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    .nav-link {
+      text-transform: uppercase;
+      font-size: 16px;
+      color: #262626;
+      padding: 0;
+      &:hover {
+        color: #48974c;
+      }
+      @media (max-width: 992px) {
+        padding: 10px;
+      }
+    }
+    .nav-link.active {
+      color: #48974c;
+    }
+    @media (max-width: 992px) {
+      justify-content: center;
+    }
+  }
+  .carousel-indicators {
+    li {
+      height: 11px;
+      width: 10px;
+      border-radius: 50%;
+      text-align: left;
+    }
+  }
+}
+.carousel {
+  .carousel-caption {
+    position: absolute;
+    bottom: 82px;
+    left: 192px;
+    padding: 41px 36px 42px 40px;
+    width: 34.5rem;
+    height: 22.5rem;
+    opacity: 0.95;
+    background-color: #fff;
+    color: #262626;
+    h5 {
+      font-family: "Cormorant Infant";
+      font-size: 4.2rem;
+      line-height: 0.85;
+      letter-spacing: 0.09px;
+      text-align: left;
+      font-weight: 700;
+      color: #404040;
+    }
+    p {
+      font-family: "Cormorant Infant";
+      font-size: 1.3rem;
+      line-height: 1.4;
+      letter-spacing: 0.09px;
+      text-align: left;
+      color: #404040;
+      margin-top: 22px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 1460px) {
+      width: 31.5rem;
+      height: 19.5rem;
+      h5 {
+        font-size: 3.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 1300px) {
+      width: 30.5rem;
+      height: 13.5rem;
+      h5 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    @media (max-width: 992px) {
+      bottom: 10px;
+    }
+  }
+}

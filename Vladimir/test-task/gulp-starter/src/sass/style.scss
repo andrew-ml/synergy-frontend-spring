@@ -1,0 +1,53 @@
+@import "src/bootstrap/bootstrap";
+@import "header";
+@import "content";
+@import "building";
+@import "footer";
+@import "normalize";
+
+body {
+  background: #f8f8f8;
+}
+
+.facebook {
+  padding: 31px;
+  width: 100%;
+  height: 261px;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  h3 {
+    font-family: "Cormorant Infant";
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.08;
+    letter-spacing: 0.12px;
+    color: #262626;
+  }
+  @media (max-width: 992px) {
+    text-align: center;
+  }
+}
+
+.banner {
+  padding: 23px;
+  margin: 0;
+  width: 100%;
+  height: 261px;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  h1 {
+    padding: 90px;
+    font-family: "Cormorant Infant";
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.08;
+    letter-spacing: 0.12px;
+    text-align: center;
+    color: #262626;
+  }
+  @media (max-width: 992px) {
+    margin-top: 30px;
+  }
+}

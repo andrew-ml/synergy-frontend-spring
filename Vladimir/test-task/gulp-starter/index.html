@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HTML tutorial website" />
+    <meta name="keywords" content="HTML,CSS,JavaScript" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fonts/CormorantInfant/stylesheet.css" />
+    <title>HTML tutorial web page</title>
+  </head>
+
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <header>
+      <div class="container">
+        <h1 class="title-name">
+          Храм святого преподобного Саввы Сторожевского
+        </h1>
+        <p class="title-about">
+          Местная религиозная организация Московской епархии Русской
+          Православной Церкви (Московский Патриархат)
+        </p>
+        <hr />
+
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">прп. Савва сторожевский</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">жизнь прихода</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">фотоальбом</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">пожертвования</a>
+          </li>
+        </ul>
+      </div>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide mt-4"
+        data-ride="carousel"
+      >
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Дорогие братья и сестры</h5>
+          <p>
+            Приглашаем Вас каждое воскресенье в 13.00 на молебен о строительстве
+            Храма преподобного Саввы Сторожевского. Молебен служится на месте
+            строительства по адресу: пл. Викторио Кодовильи, вл. 1 напротив
+            бывшего кинотеатра “Енисей”
+          </p>
+        </div>
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slide-1.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide-2.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide-1.png" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="contant">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="shape mt-4">
+              <img class="img-shape" src="img/shape-1.jpg" alt="" />
+              <div class="d-flex align-items-center mt-3">
+                <img src="img/icon-1.png" alt="" />
+                <div class="data" class="ml-3">7 фев 2017</div>
+              </div>
+              <h5 class="mt-3">Визит Ресина В.И.</h5>
+              <p>
+                2 февраля 2017 года строительную площадку храма преподобного
+                Саввы Сторожевского в Измайлово посетили член комитета Госдумы
+                по земельным отношениям и строительству, советник Святейшего
+                Патриарха Московского и всея Руси Кирилла, Владимир Иосифович
+                Ресин. Вместе с ним строящийся храм посетил архимандрит Илия. В
+                ходе визита были отмечены значительные успехи строительства и
+              </p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div>
+                  <button type="button" class="btn btn-outline-success">
+                    Подробнее
+                  </button>
+                </div>
+                <div class="social">
+                  <button></button>
+                  <a href=""><img src="img/ok.png" alt=""/></a>
+                  <a href=""><img src="img/tw.png" alt=""/></a>
+                  <a href=""><img src="img/fb.png" alt=""/></a>
+                  <a href=""><img src="img/ins.png" alt=""/></a>
+                </div>
+              </div>
+            </div>
+            <div class="shape mt-4">
+              <img class="img-shape" src="img/shape-1.jpg" alt="" />
+              <div class="d-flex align-items-center mt-3">
+                <img src="img/icon-1.png" alt="" />
+                <div class="data" class="ml-3">7 фев 2017</div>
+              </div>
+              <h5 class="mt-3">Визит Ресина В.И.</h5>
+              <p>
+                2 февраля 2017 года строительную площадку храма преподобного
+                Саввы Сторожевского в Измайлово посетили член комитета Госдумы
+                по земельным отношениям и строительству, советник Святейшего
+                Патриарха Московского и всея Руси Кирилла, Владимир Иосифович
+                Ресин. Вместе с ним строящийся храм посетил архимандрит Илия. В
+                ходе визита были отмечены значительные успехи строительства и
+              </p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div>
+                  <button type="button" class="btn btn-outline-success">
+                    Подробнее
+                  </button>
+                </div>
+                <div class="social">
+                  <button></button>
+                  <a href=""><img src="img/ok.png" alt=""/></a>
+                  <a href=""><img src="img/tw.png" alt=""/></a>
+                  <a href=""><img src="img/fb.png" alt=""/></a>
+                  <a href=""><img src="img/ins.png" alt=""/></a>
+                </div>
+              </div>
+            </div>
+            <button class="bt-bg mt-4 ml-4">Ранее &gt;</button>
+          </div>
+          <div class="col-lg-6 mt-4 ">
+            <div class="row shape-2">
+              <div class="col-lg-6">
+                <div class="maleben">
+                  <img src="img/maleben.jpg" alt="" />
+                  <h3>Молебен 19.02.2017</h3>
+                  <p>
+                    19 февраля в этом году совпадает с неделей о Страшном
+                    Суде...
+                  </p>
+                  <div class="datail">
+                    <button class="arrow">></button>
+                    <p class="dtl"><a href=""> Поподробней</a></p>
+                  </div>
+                </div>
+                <div class="maleben">
+                  <img src="img/maleben.jpg" alt="" />
+                  <h3>Молебен 19.02.2017</h3>
+                  <p>
+                    19 февраля в этом году совпадает с неделей о Страшном
+                    Суде...
+                  </p>
+                  <div class="datail">
+                    <button class="arrow">></button>
+                    <p class="dtl"><a href=""> Поподробней</a></p>
+                  </div>
+                </div>
+                <div class="maleben">
+                  <img src="img/maleben.jpg" alt="" />
+                  <h3>Молебен 19.02.2017</h3>
+                  <p>
+                    19 февраля в этом году совпадает с неделей о Страшном
+                    Суде...
+                  </p>
+                  <div class="datail">
+                    <button class="arrow">></button>
+                    <p class="dtl"><a href=""> Поподробней</a></p>
+                  </div>
+                </div>
+                <div class="maleben">
+                  <img src="img/maleben.jpg" alt="" />
+                  <h3>Молебен 19.02.2017</h3>
+                  <p>
+                    19 февраля в этом году совпадает с неделей о Страшном
+                    Суде...
+                  </p>
+                  <div class="datail">
+                    <button class="arrow">></button>
+                    <p class="dtl"><a href=""> Поподробней</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="maleben">
+                  <img src="img/maleben.jpg" alt="" />
+                  <h3>Молебен 19.02.2017</h3>
+                  <p>
+                    19 февраля в этом году совпадает с неделей о Страшном
+                    Суде...
+                  </p>
+                  <div class="datail">
+                    <button class="arrow">></button>
+                    <p class="dtl"><a href=""> Поподробней</a></p>
+                  </div>
+                </div>
+                <div class="maleben">
+                  <img src="img/maleben.jpg" alt="" />
+                  <h3>Молебен 19.02.2017</h3>
+                  <p>
+                    19 февраля в этом году совпадает с неделей о Страшном
+                    Суде...
+                  </p>
+                  <div class="datail">
+                    <button class="arrow">></button>
+                    <p class="dtl"><a href=""> Поподробней</a></p>
+                  </div>
+                </div>
+                <div class="maleben">
+                  <img src="img/maleben.jpg" alt="" />
+                  <h3>Молебен 19.02.2017</h3>
+                  <p>
+                    19 февраля в этом году совпадает с неделей о Страшном
+                    Суде...
+                  </p>
+                  <div class="datail">
+                    <button class="arrow">></button>
+                    <p class="dtl"><a href=""> Поподробней</a></p>
+                  </div>
+                </div>
+                <div class="maleben">
+                  <img src="img/maleben.jpg" alt="" />
+                  <h3>Молебен 19.02.2017</h3>
+                  <p>
+                    19 февраля в этом году совпадает с неделей о Страшном
+                    Суде...
+                  </p>
+                  <div class="datail">
+                    <button class="arrow">></button>
+                    <p class="dtl"><a href="">Поподробней</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button-page mt-4">
+              <div class="arr"><a href="">&lt;</a></div>
+              <button>1</button>
+              <button>2</button>
+              <button>3</button>
+              <button>4</button>
+              <p class="yupi">...</p>
+              <button>12</button>
+              <div class="arr-1"><a href="">&gt;</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="building mt-5">
+      <img src="img/building.jpg" alt="" />
+      <div class="about-buld">Ход строительства</div>
+      <button>Подробнее</button>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="facebook">
+            <h3>Facebook</h3>
+            <iframe
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=288&height=152&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+              width="288"
+              height="152"
+              style="border:none;overflow:hidden"
+              scrolling="no"
+              frameborder="0"
+              allowTransparency="true"
+              allow="encrypted-media"
+              class="facebook-w"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="banner">
+            <h1>Banner</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h1>Храм святого преподобного Саввы Сторожевского</h1>
+            <p>
+              Местная религиозная организация Московской епархии Русской
+              Православной Церкви (Московский Патриархат)
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <ul class="mt-4">
+              <li class="">
+                <a class="nav-link" class="" href="#">Главная</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">прп. Савва сторожевский</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">жизнь прихода</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">фотоальбом</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">контакты</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">пожертвования</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <div class="social mt-4">
+              <button></button>
+              <a href=""><img src="img/ok.png" alt=""/></a>
+              <a href=""><img src="img/tw.png" alt=""/></a>
+              <a href=""><img src="img/fb.png" alt=""/></a>
+              <a href=""><img src="img/ins.png" alt=""/></a>
+            </div>
+            <div class="stat mt-5">
+              <img src="img/stat.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="cop">
+          © 2017 Храм святого преподобного Саввы Сторожевского
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
