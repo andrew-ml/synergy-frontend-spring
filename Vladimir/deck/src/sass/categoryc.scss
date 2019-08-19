@@ -1,0 +1,94 @@
+.watch {
+  width: 100%;
+  height: 970px;
+}
+
+.gtydugfi {
+  position: relative;
+  width: 100%;
+  height: 323px;
+  background: #f9fafc;
+  padding: 41px 101px 0 66px;
+  .number {
+    position: absolute;
+    font-family: Oswald;
+    font-size: 88px;
+    font-weight: 500;
+    letter-spacing: -0.62px;
+    color: #f2f3f6;
+  }
+  .technology {
+    position: absolute;
+    top: 100px;
+    left: 116px;
+    text-transform: uppercase;
+    font-family: Oswald;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.05px;
+    color: #ff565c;
+    @media (max-width: 480px) {
+      left: 60px;
+    }
+  }
+  .differentiate-yourse {
+    position: absolute;
+    top: 135px;
+    left: 116px;
+    width: 463px;
+    font-family: Lato;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.13px;
+    color: #1d1f24;
+    @media (max-width: 480px) {
+      width: 363px;
+      left: 10px;
+    }
+  }
+  .there-is-no-denying {
+    position: absolute;
+    top: 210px;
+    left: 116px;
+    width: 484px;
+    opacity: 0.7;
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 1.56;
+    color: rgba(29, 31, 36, 0.7);
+
+    @media (max-width: 480px) {
+      width: 334px;
+      top: 225px;
+      left: 10px;
+    }
+  }
+  .line {
+    position: absolute;
+    top: 315px;
+    left: 116px;
+    display: flex;
+    align-items: center;
+    .red-line {
+      background: #ff565c;
+      width: 50px;
+      height: 3px;
+      @media (max-width: 1321px) {
+        display: none;
+      }
+    }
+    .last-line {
+      background: #ebebeb;
+      width: 490px;
+      height: 1px;
+      @media (max-width: 1321px) {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    height: 385px;
+    padding: 41px 101px 0 10px;
+  }
+}

@@ -1,0 +1,129 @@
+.bg-text {
+  width: 434px;
+  font-family: Oswald;
+  font-size: 68px;
+  font-weight: 500;
+  line-height: 1.15;
+  color: #1d1f24;
+  @media (max-width: 480px) {
+    width: 423px;
+    text-align: center;
+  }
+}
+
+.View-All {
+  width: 210px;
+  height: 60px;
+  border: solid 1px #ebebeb;
+  background: #ffffff;
+  font-family: Oswald;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.48px;
+  text-align: center;
+  color: #ff565c;
+  text-align: center;
+  outline: none !important;
+  &:hover {
+    background: #ff565c;
+    color: #fff;
+  }
+}
+.line-for-button {
+  position: absolute;
+  top: 104px;
+  left: 16px;
+  width: 208px;
+  height: 3px;
+  background: #ff565c;
+}
+
+.plate-for-name {
+  position: relative;
+  height: 539px;
+  width: 100%;
+  .plate-image {
+    width: 100%;
+    height: 549px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .plate-block {
+    position: absolute;
+    top: 311px;
+    z-index: 2;
+    background: #ffffff;
+    width: 412px;
+    height: 238px;
+    padding: 12px 33px;
+    @media (max-width: 480px) {
+      width: 100%;
+      height: 260px;
+    }
+  }
+
+  .nuber-block {
+    position: absolute;
+    width: 68px;
+    height: 74px;
+    font-family: Oswald;
+    font-size: 88px;
+    font-weight: 500;
+    letter-spacing: -0.62px;
+    color: #f2f3f6;
+  }
+
+  .intertament {
+    position: absolute;
+    top: 40px;
+    left: 83px;
+    text-transform: uppercase;
+    font-family: Oswald;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.05px;
+    color: #ff565c;
+  }
+
+  .titel-label {
+    position: absolute;
+    top: 75px;
+    left: 83px;
+    font-family: Lato;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.13px;
+    color: #1d1f24;
+  }
+
+  .some-text {
+    position: absolute;
+    top: 150px;
+    left: 83px;
+    width: 285px;
+    opacity: 0.7;
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 1.56;
+    color: rgba(29, 31, 36, 0.7);
+    @media (max-width: 480px) {
+      width: 248px;
+    }
+  }
+}
+
+.btn {
+  margin: 28px 0 28px 83px;
+  border: none;
+  border-radius: 0px;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.48px;
+  text-align: center;
+  color: #ff565c;
+}

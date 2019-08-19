@@ -1,0 +1,50 @@
+.gallery {
+  img {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .block {
+    height: 300px;
+    background: #000;
+    color: #fff;
+    margin-top: 20px;
+  }
+  .categories {
+    font-family: Oswald;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 30px 30px;
+    letter-spacing: 0.92px;
+    text-align: left;
+    color: #ffffff;
+  }
+  hr {
+    background: #1d1f24;
+  }
+  .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 20px 30px;
+  }
+  .technology {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.44;
+    letter-spacing: -0.13px;
+    a {
+      outline: none;
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+  .number {
+    opacity: 0.16;
+    font-family: Oswald;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.733);
+  }
+}
